@@ -9,7 +9,7 @@ $lang = array(
 'Freeform Pro',
 
 'go_pro' =>
-'Passez Pro !',
+'Passez à Pro !',
 
 'freeform_module_description' =>
 'Création de formulaires et collection de données avancés',
@@ -27,7 +27,7 @@ $lang = array(
 'Défaut',
 
 'go_pro_custom_fields' =>
-'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro? Cliquez ici pour Passer Pro pour $79.95.',
+'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro? Cliquez ici pour Passer à Pro pour $79.95.',
 
 'no_available_composer_forms' =>
 'Aucun formulaire Freeform avec mise en page Composeur n\'est disponible.',
@@ -192,13 +192,13 @@ $lang = array(
 'Label du Formulaire',
 
 'form_label_desc' =>
-'Ceci est le nom complet du Formulaire.<br/>Exemple: Contactez-nous',
+'Ceci est le nom complet du Formulaire.<br/>Exemple : Contactez-nous',
 
 'form_name' =>
 'Nom du Formulaire',
 
 'form_name_desc' =>
-'Nom court du Formulaire. Un mot, sans espace. Les caractères de soulignement (underscore) sont acceptés. Exemple: contactez_nous',
+'Nom court du Formulaire. Un mot, sans espace. Les caractères de soulignement (underscore) sont acceptés. Exemple : contactez_nous',
 
 'form_description_desc' =>
 'Décrivez le Formulaire.<br/>Utile pour connaître le rôle du formulaire.',
@@ -294,7 +294,7 @@ $lang = array(
 'Cliquez ou glissez pour ajouter ou enlever des champs. Glissez les champs dans la colonne de droite pour trier. Les champs dans la colonne de droite seront disponibles dans ce formulaire à l\'affichage et seront affichés dans cet ordre quand la paire de balise {all_form_fields} est utilisée.',
 
 'return_page_field' =>
-'Enterez un chemin de Retour pour envoyer les utilisateurs une fois qu\'ils ont soumis ce formulaire (ex: \'formulaire/merci\'):',
+'Entrez un chemin de Retour pour envoyer les utilisateurs une fois qu\'ils ont soumis ce formulaire (ex: \'formulaire/merci\') :',
 
 'composer_instructions' =>
 'Cliquez ou glissez un champ spécial ou personnalisé dans la vue du Composeur. Cliquer un élément crée une rangée avec l\'élément à l\'intérieur. Vous pouvez aussi créer vos propres rangées et y glisser des éléments à l\'intérieur. L\'élément de rupture de page fait de ce formulaire un formulaire multi-page.',
@@ -798,7 +798,7 @@ $lang = array(
 'Ceci est une information utile récupérée à partir de vos paramètres php.ini. Cette information ne peut être changée dans ces options de champ, mais se change dans votre fichier php.ini.',
 
 'max_file_upload_size' =>
-'Taille maximum du téléversement d\'un seul fichier:',
+'Taille maximum du téléversement d\'un seul fichier :',
 
 'max_files_uploadable' =>
 'Le nombre maximum de fichiers qui peuvent être téléversés lors d\'une seule soumission :',
@@ -969,13 +969,13 @@ $lang = array(
 'Label du Champ',
 
 'field_label_desc' =>
-'Le nom complet du champ. Exemple: Nom de Famille.',
+'Le nom complet du champ. Exemple : Nom de Famille.',
 
 'field_name' =>
 'Nom du Champ',
 
 'field_name_desc' =>
-'Nom court du champ. Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés. Exemple: nom_de_famille',
+'Nom court du champ. Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés. Exemple : nom_de_famille',
 
 'field_order' =>
 'Ordre du Champ',
@@ -1074,7 +1074,7 @@ $lang = array(
 'Nom de la Notification',
 
 'notification_name_desc' =>
-'Le nom court de la notification.<br/>Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés.<br/>Exemple: succes_de_soumission',
+'Le nom court de la notification.<br/>Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés.<br/>Exemple : succes_de_soumission',
 
 'from_email' =>
 'Champ \'De\' pour Courriel',
@@ -1134,7 +1134,7 @@ $lang = array(
 'Quelqu\'un a rempli le formulaire : {form_label}',
 
 'default_notification_template' =>
-'Quelqu\'un a rempli le formulaire : {form_label}Voici les détails :{all_form_fields_string}',
+'Quelqu\'un a rempli le formulaire : {form_label}Voici les détails : {all_form_fields_string}',
 
 'include_attachments' =>
 'Inclure les Pièces jointes',
@@ -1479,16 +1479,16 @@ $lang = array(
 'Vous avez sélectionné plus de destinataires que permis.',
 
 'invalid_upload_count' =>
-'Compteur de Téléversement Invalide: le nombre de téléversement doit être plus grand que 0 et inférieur ou égal à votre paramètre max_file_uploads inscrit dans votre fichier php.ini',
+'Compteur de Téléversement Invalide : le nombre de téléversement doit être plus grand que 0 et inférieur ou égal à votre paramètre max_file_uploads inscrit dans votre fichier php.ini',
 
 'invalid_custom_location' =>
-'Destination pour Téléversement de Fichier Invalide: Ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
+'Destination pour Téléversement de Fichier Invalide : Ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
 
 'invalid_upload_location' =>
 'Choix de Destination pour Téléversement Invalide. Il est possible que les destinations de téléversement aient été éditées pendant votre mise à jour.',
 
 'invalid_filetype_filter' =>
-'Filtre de Type de Fichier Invalide: Les filtres de type de fichier valides sont soit \'*\' (sans les guillemets) pour tout permettre ou une liste délimitée par des caractères tuyau (|) d\'extensions de fichiers comme \'jpeg|jpg|gif|png\'.',
+'Filtre de Type de Fichier Invalide : Les filtres de type de fichier valides sont soit \'*\' (sans les guillemets) pour tout permettre ou une liste délimitée par des caractères tuyau (|) d\'extensions de fichiers comme \'jpeg|jpg|gif|png\'.',
 
 'file_upload_limit_exceeded' =>
 'La limite prédéterminée du nombre maximal de fichier téléversable a été franchie.',
