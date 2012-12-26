@@ -1,4 +1,16 @@
-﻿<?php
+<?php
+
+ /**
+ * Solspace - Freeform
+ *
+ * @package		Solspace:Freeform
+ * @author		Solspace DevTeam
+ * @copyright	Copyright (c) 2008-2013, Solspace, Inc.
+ * @link		http://solspace.com/docs/addon/c/Freeform/
+ * @version		4.0.9
+ * @filesource 	./system/expressionengine/third_party/freeform/language/french/
+ */
+
 $lang = array(
 
 
@@ -27,7 +39,7 @@ $lang = array(
 'Défaut',
 
 'go_pro_custom_fields' =>
-'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro? Cliquez ici pour Passer à Pro !',
+'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro ? Cliquez ici pour Passer à Pro !',
 
 'no_available_composer_forms' =>
 'Aucun formulaire Freeform avec mise en page Composeur n\'est disponible.',
@@ -432,7 +444,7 @@ $lang = array(
 'Auteur(e)',
 
 'ip_address' =>
-'Addresse&nbsp;I.P.',
+'Addresse&nbsp;IP',
 
 'entry_date' =>
 'Date&nbsp;de&nbsp;l\'Entrée',
@@ -459,7 +471,7 @@ $lang = array(
 'Afficher',
 
 'no_entries_for_form' =>
-'Il n\'y a pas d\'entrées pour ce formulaire.',
+'Il n\'y a pas d\'entrée pour ce formulaire.',
 
 'edit_field_layout' =>
 'Éditer l\'Emplacement des Champs',
@@ -483,7 +495,7 @@ $lang = array(
 'Mois Précédent',
 
 'this_year' =>
-'Cette Annéee',
+'Cette Année',
 
 'choose_date_range' =>
 'Choisir les Dates',
@@ -510,7 +522,7 @@ $lang = array(
 'Aucun résultat pour cette recherche',
 
 'viewing_moderation' =>
-'Vous visionnez les soumissions pour &quot;<strong>%form_label%</strong>&quot;. Ces status sont &quot;en attente&quot;. Approuver celles-ci changera leur status pour &quot;ouvert&quot;.',
+'Vous visionnez les soumissions pour &quot;<strong>%form_label%</strong>&quot;. Leur statut est &quot;En Attente&quot;. Approuver celles-ci changera leur statut pour &quot;Ouvert&quot;.',
 
 'approve_selected' =>
 'Approuver les éléments Sélectionnés',
@@ -600,7 +612,7 @@ $lang = array(
 'Éléments Multi-Liste',
 
 'multi_list_items_desc' =>
-'Choisissez parmi les 4 types de listes multi-sélections :<br/><br/> - Liste<br/> - Liste d\'une paire Valeur/Label<br/> - Liste à partir d\'un Champ de Canal<br/> - Zone de Texte délimitée par Nouvelles Lignes (Newline Delimited)<br/><br/>Des insertions en blanc se créeront quand le dernier élément est utilisé.',
+'Choisissez parmi les 4 types de listes multi-sélections :<br/><br/> - Liste<br/> - Liste d\'une paire Valeur/Label<br/> - Liste à partir d\'un Champ de Canal<br/> - Zone de Texte délimitée par Nouvelles Lignes (Newline Delimited)<br/><br/>Des insertions en blanc se créeront quand le dernier élément sera utilisé.',
 
 'load_from_channel_field' =>
 'Charger à partir d\'un Champ de Canal',
@@ -765,28 +777,28 @@ $lang = array(
 'N\'afficher que ces listes.',
 
 'default_file_name' =>
-'Téléversement de Fichier',
+'Téléchargement de Fichier',
 
 'default_file_desc' =>
-'Un champ qui permet à un utilisateur de téléverser des fichiers.',
+'Un champ qui permet à un utilisateur de télécharger des fichiers.',
 
 'file_upload_location' =>
-'Destination du Téléversement de Fichier',
+'Destination du Téléchargement de Fichier',
 
 'file_upload_location_desc' =>
-'Où seront téléversés les fichiers ? Vous pouvez utiliser la configuration pour les répertoires EE standard ou spécifier un nouveau chemin (path)..',
+'Où seront téléchargés les fichiers ? Vous pouvez utiliser la configuration pour les répertoires EE standard ou spécifier un nouveau chemin (path)..',
 
 'file_upload_missing_error' =>
-'Une destination pour le téléversement est requise pour que le champ téléversement de fichier fonctionne.',
+'Une destination pour le téléchargement est requise pour que le champ téléchargement de fichier fonctionne.',
 
 'invalid_file_upload_preference' =>
-'ID de destination pour le téléversement de fichier invalide.',
+'ID de destination pour le téléchargement de fichier invalide.',
 
 'file_upload_pref_missing_error' =>
-'Vous n\'avez aucune configuration pour le téléversement de fichier et vous avez besoin d\'au moins une destination pour pouvoir téléverser des fichiers avec ce champ.',
+'Vous n\'avez aucune configuration pour le téléchargement de fichier et vous avez besoin d\'au moins une destination pour pouvoir télécharger des fichiers avec ce champ.',
 
 'specify_upload_location' =>
-'Spécifier ma propre destination pour les téléversements',
+'Spécifier ma propre destination pour les téléchargements',
 
 'full_path_to_folder' =>
 'Chemin complet (Full path) vers le répertoire accessible pour l\'écriture',
@@ -798,16 +810,16 @@ $lang = array(
 'Ceci est une information utile récupérée à partir de vos paramètres php.ini. Cette information ne peut être changée dans ces options de champ, mais se change dans votre fichier php.ini.',
 
 'max_file_upload_size' =>
-'Taille maximum du téléversement d\'un seul fichier :',
+'Taille maximum du téléchargement d\'un seul fichier :',
 
 'max_files_uploadable' =>
-'Le nombre maximum de fichiers qui peuvent être téléversés lors d\'une seule soumission :',
+'Le nombre maximum de fichiers qui peuvent être téléchargés lors d\'une seule soumission :',
 
 'allowed_upload_count' =>
-'Compte de téléversement accepté',
+'Compte de téléchargement accepté',
 
 'allowed_upload_count_desc' =>
-'Quantité maximum de fichiers qui peuvent être téléversés lors d\'une seule soumission.<br/><br/><strong class=\'ss_notice\'>Le nombre maximum dans ce menu déroulant provient de la configuration système PHP pour le maximum de fichiers qui peuvent être téléversés lors d\'une soumissions et ne peut pas être modifié en utilisant le type de champ pour fichier multiples.</strong>',
+'Quantité maximum de fichiers qui peuvent être téléchargés lors d\'une seule soumission.<br/><br/><strong class=\'ss_notice\'>Le nombre maximum dans ce menu déroulant provient de la configuration système PHP pour le maximum de fichiers qui peuvent être téléchargés lors d\'une soumissions et ne peut pas être modifié en utilisant le type de champ pour fichier multiples.</strong>',
 
 'overwrite_on_edit' =>
 'Remplacer pendant l\'édition',
@@ -819,13 +831,13 @@ $lang = array(
 'Désactiver le nettoyage XSS',
 
 'disable_xss_clean_desc' =>
-'Cette option permet de désactiver le système de nettoyage XSS seulement pour ce champ de téléversement de fichier dans le cas où vous avez des difficultés avec des téléversements de fichiers qui sont bloqués par erreur.',
+'Cette option permet de désactiver le système de nettoyage XSS seulement pour ce champ de téléchargement de fichier dans le cas où vous avez des difficultés avec des téléchargements de fichiers qui sont bloqués par erreur.',
 
 'file_field_uploads' =>
-'Téléversements de Champ de Fichier',
+'Téléchargements de Champ de Fichier',
 
 'no_files_uploaded' =>
-'Aucun Fichier Téléversé',
+'Aucun Fichier Téléchargé',
 
 'kb' =>
 'KB',
@@ -867,7 +879,7 @@ $lang = array(
 'Fichier introuvable',
 
 'upload_directory_name' =>
-'Nom du répertoire de Téléversement',
+'Nom du répertoire de destination',
 
 'default_multiselect_name' =>
 'Sélection Multiple',
@@ -1140,16 +1152,16 @@ $lang = array(
 'Inclure les Pièces jointes',
 
 'include_attachments_desc' =>
-'Certains champs Freeform acceptent des téléversements de fichiers. En activant cette option, les fichiers en pièce jointe sont envoyés par courriel avec la notification.',
+'Certains champs Freeform acceptent des téléchargements de fichiers. En activant cette option, les fichiers en pièce jointe sont envoyés par courriel avec la notification.',
 
 'uploads' =>
-'Téléversements',
+'Téléchargements',
 
 'upload_count' =>
-'Compteur de Téléversement',
+'Compteur de Téléchargement',
 
 'freeform_file_field_upload_count' =>
-'Compteur des Champ de Fichier Téléversement Freeform',
+'Compteur des Champ de Fichier Téléchargement Freeform',
 
 'attachments' =>
 'Pièces jointes',
@@ -1251,10 +1263,10 @@ $lang = array(
 'Oui, migrer les pièces jointes',
 
 'migrate_attachments_desc' =>
-'Vous avez peut-être permis à des utilisateurs de téléverser des fichiers lors de la soumission de formulaires. Vous pouvez migrer ces pièces jointes vers vos nouveaux formulaires. Des champs de téléversement seront créés pour vous.',
+'Vous avez peut-être permis à des utilisateurs de télécharger des fichiers lors de la soumission de formulaires. Vous pouvez migrer ces pièces jointes vers vos nouveaux formulaires. Des champs de téléchargement seront créés pour vous.',
 
 'migrate_attachments_desc_not_installed' =>
-'Vous avez peut-être permis à des utilisateurs de téléverser des fichiers lors de la soumission de formulaires. Vous pouvez migrer ces pièces jointes vers vos nouveaux formulaires. Des champs de téléversement seront créés pour vous. Cependant, pour faire cela, il vous faut d\'abord installer le champ de téléversement de Fichiers Freeform.',
+'Vous avez peut-être permis à des utilisateurs de télécharger des fichiers lors de la soumission de formulaires. Vous pouvez migrer ces pièces jointes vers vos nouveaux formulaires. Des champs de téléchargement seront créés pour vous. Cependant, pour faire cela, il vous faut d\'abord installer le champ de téléchargement de Fichiers Freeform.',
 
 'migration_in_progress' =>
 'Migration en cours',
@@ -1479,13 +1491,13 @@ $lang = array(
 'Vous avez sélectionné plus de destinataires que permis.',
 
 'invalid_upload_count' =>
-'Compteur de Téléversement Invalide : le nombre de téléversement doit être plus grand que 0 et inférieur ou égal à votre paramètre max_file_uploads inscrit dans votre fichier php.ini',
+'Compteur de Téléchargement Invalide : le nombre de téléchargement doit être plus grand que 0 et inférieur ou égal à votre paramètre max_file_uploads inscrit dans votre fichier php.ini',
 
 'invalid_custom_location' =>
-'Destination pour Téléversement de Fichier Invalide : Ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
+'Destination pour Téléchargement de Fichier Invalide : ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
 
 'invalid_upload_location' =>
-'Choix de Destination pour Téléversement Invalide. Il est possible que les destinations de téléversement aient été éditées pendant votre mise à jour.',
+'Choix de Destination pour Téléchargement Invalide. Il est possible que les destinations de téléchargement aient été éditées pendant votre mise à jour.',
 
 'invalid_filetype_filter' =>
 'Filtre de Type de Fichier Invalide : Les filtres de type de fichier valides sont soit \'*\' (sans les guillemets) pour tout permettre ou une liste délimitée par des caractères tuyau (|) d\'extensions de fichiers comme \'jpeg|jpg|gif|png\'.',
@@ -1494,7 +1506,7 @@ $lang = array(
 'La limite prédéterminée du nombre maximal de fichier téléversable a été franchie.',
 
 'unknown_file_upload_problem' =>
-'Problème inconnu de téléversement de fichier.',
+'Problème inconnu de téléchargement de fichier.',
 
 'reason_banned' =>
 'Raison : Banni',
@@ -1686,10 +1698,10 @@ $lang = array(
 'Incapable de trouver une variable \'post\' nommée \'user file\'.',
 
 'upload_file_exceeds_limit' =>
-'Le maximum de téléversement de fichiers excède la taille maximum allouée dans votre configuration PHP.',
+'Le maximum de téléchargement de fichiers excède la taille maximum allouée dans votre configuration PHP.',
 
 'upload_file_exceeds_form_limit' =>
-'Le maximum de téléversement de fichiers excède la taille maximum allouée par le formulaire.',
+'Le maximum de téléchargement de fichiers excède la taille maximum allouée par le formulaire.',
 
 'upload_file_partial' =>
 'Le fichier a été partiellement téléchargé.',
@@ -1701,22 +1713,22 @@ $lang = array(
 'Le fichier n\'a pu être écrit sur disque.',
 
 'upload_stopped_by_extension' =>
-'Le téléversement de fichier a été arrêté par l\'extension.',
+'Le téléchargement de fichier a été arrêté par l\'extension.',
 
 'upload_no_file_selected' =>
-'Vous n\'avez pas choisi un fichier à téléverser.',
+'Vous n\'avez pas choisi un fichier à télécharger.',
 
 'upload_invalid_filetype' =>
-'Le type de fichier que vous essayez de téléverser n\'est pas accepté.',
+'Le type de fichier que vous essayez de télécharger n\'est pas accepté.',
 
 'upload_invalid_filesize' =>
-'Le fichier que vous essayez de téléverser a une taille plus grande que la taille autorisée.',
+'Le fichier que vous essayez de télécharger a une taille plus grande que la taille autorisée.',
 
 'upload_invalid_dimensions' =>
-'L\'image que vous essayez de téléverser excède le maximum de hauteur et largeur.',
+'L\'image que vous essayez de télécharger excède le maximum de hauteur et largeur.',
 
 'upload_destination_error' =>
-'Un problème est survenu en essayant de déplacer le fichier téléversé vers sa destination finale.',
+'Un problème est survenu en essayant de déplacer le fichier téléchargé vers sa destination finale.',
 
 'upload_no_filepath' =>
 'Le chemin ne semble pas valide.',
@@ -1728,7 +1740,7 @@ $lang = array(
 'Le nom de fichier que vous avez soumis existe déjà sur le serveur.',
 
 'upload_not_writable' =>
-'La répertoire pour la destination de téléversement ne semble pas être inscriptible.',
+'Le répertoire pour la destination de téléchargement ne semble pas être inscriptible.',
 
 'update_freeform_module' =>
 'Mettre à Jour le Module Freeform',
@@ -1740,7 +1752,7 @@ $lang = array(
 'Le module a été mis à jour avec succès.',
 
 'update_failure' =>
-'Il y a eu une erreur en essayant de mettre le module à jour à la plus récente version.',
+'Une erreur s\'est produite en tentant de mettre à jour le module vers une version plus récente.',
 
 'list_of_us_states' => '
 Alabama (AL)
