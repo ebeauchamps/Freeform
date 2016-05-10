@@ -1,27 +1,40 @@
 <?php
 
- /**
- * Solspace - Freeform
+/**
+ * Freeform - French Language
  *
  * @package		Solspace:Freeform
- * @author		Solspace DevTeam
- * @copyright	Copyright (c) 2008-2013, Solspace, Inc.
- * @link		http://solspace.com/docs/addon/c/Freeform/
- * @version		4.0.9
- * @filesource 	./system/expressionengine/third_party/freeform/language/french/
+ * @author		Solspace, Inc.
+ * @copyright	Copyright (c) 2008-2016, Solspace, Inc.
+ * @link		https://solspace.com/docs/freeform
+ * @license		https://solspace.com/software/license-agreement
+ * @version		4.2.4
+ * @filesource	freeform/language/french/freeform_lang.php
+ *
+ * Initial French translation by Nicolas Bottari, 4.2.4 overhaul by Emmanuel Beauchamps 
  */
 
 $lang = array(
 
-
 'success' =>
 'Succès',
 
-'freeform_module_name' =>
-'Freeform Pro',
+//----------------------------------------
+// Required for MODULES page
+//----------------------------------------
+
+//%non_pro%
+"freeform_module_name" =>
+"Freeform",
+//%/non_pro%
+
+//%pro%
+"freeform_module_name" =>
+"Freeform Pro",
+//%/pro%
 
 'go_pro' =>
-'Passez à Pro !',
+'Passez Pro!',
 
 'freeform_module_description' =>
 'Création de formulaires et collection de données avancés',
@@ -38,14 +51,45 @@ $lang = array(
 'default' =>
 'Défaut',
 
+// -------------------------------------
+//	accessory
+// -------------------------------------
+
+'freeform_accessory_description' =>
+"Entrées récentes de Freeform et noms courts des champs assignés à des formulaires.",
+
+'freeform_form_info' =>
+"Info Formulaire",
+
+// -------------------------------------
+//	non pro lang
+// -------------------------------------
+
 'go_pro_custom_fields' =>
-'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro ? Cliquez ici pour Passer à Pro !',
+'Saviez-vous qu\'il y a plus de types de champs disponibles avec Freeform Pro ? Cliquez ici pour Passer Pro !',
+
+// -------------------------------------
+//	fieldtype
+// -------------------------------------
 
 'no_available_composer_forms' =>
-'Aucun formulaire Freeform avec mise en page Composeur n\'est disponible.',
+'Aucun formulaire Freeform avec mise en page Composer n\'est disponible.',
 
 'choose_composer_form' =>
-'Choisissez un formulaire Composeur Freeform à afficher :',
+'Choisissez un formulaire Composer Freeform à afficher :',
+
+'toggle_field_short_names' =>
+"Basculer les noms courts des champs",
+
+'show' =>
+"Afficher",
+
+'hide' =>
+"Masquer",
+
+//----------------------------------------
+//  Main Menu
+//----------------------------------------
 
 'forms' =>
 'Formulaires',
@@ -63,7 +107,7 @@ $lang = array(
 'Modèles',
 
 'composer_templates' =>
-'Modèles de Composeur',
+'Modèles de Composer',
 
 'permissions' =>
 'Permissions',
@@ -86,6 +130,10 @@ $lang = array(
 'id' =>
 'ID',
 
+// -------------------------------------
+//	Multi site
+// -------------------------------------
+
 'show_from_all_sites' =>
 'Afficher les éléments de tous les sites',
 
@@ -100,6 +148,10 @@ $lang = array(
 
 'site_prefs_for' =>
 'Préf. de Site Pour :',
+
+//----------------------------------------
+//  Buttons
+//----------------------------------------
 
 'save' =>
 'Sauvegarder',
@@ -131,6 +183,13 @@ $lang = array(
 'notice' =>
 'Attention',
 
+'view_lower' =>
+"voir",
+
+// -------------------------------------
+//	form statuses
+// -------------------------------------
+
 'pending' =>
 'En attente',
 
@@ -143,11 +202,15 @@ $lang = array(
 'status' =>
 'Statut',
 
+// -------------------------------------
+// forms
+// -------------------------------------
+
 'no_forms' =>
 'Aucun formulaire n\'existe actuellement.',
 
 'no_forms_legacy' =>
-'Aucun formulaire n\'existe actuellement, cependant, puisque vous avez fait une mise à jour d\'une version antérieure de Freeform, vous pouvez migrer maintenant vos anciennes collections.',
+'Aucun formulaire n\'existe actuellement, cependant, puisque vous avez fait une mise à jour d\'une version antérieure de Freeform, vous pouvez maintenant migrer vos anciennes collections.',
 
 'migrate_collections' =>
 'Migrer vos anciennes collections',
@@ -155,11 +218,17 @@ $lang = array(
 'create_new_form_now' =>
 'Créer maintenant un nouveau formulaire.',
 
+'forms' =>
+"Formulaires",
+
 'form' =>
 'Formulaire',
 
 'submissions' =>
 'Soumissions',
+
+'pending_submissions' =>
+"Soumissions en attente",
 
 'moderate' =>
 'Modérer',
@@ -171,7 +240,7 @@ $lang = array(
 'Éditer',
 
 'in_composer' =>
-'dans le Composeur',
+'dans le Composer',
 
 'settings' =>
 'Réglages',
@@ -182,11 +251,15 @@ $lang = array(
 'delete' =>
 'Supprimer',
 
+// -------------------------------------
+//	create forms
+// -------------------------------------
+
 'edit_form_success' =>
 'Formulaire Sauvegardé',
 
 'duplicated_from_' =>
-'Insérer données dupliquées à partir de :',
+'Données insérées dupliquées à partir de:',
 
 'create_form' =>
 'Créer le formulaire',
@@ -195,22 +268,22 @@ $lang = array(
 'Mettre à jour le formulaire',
 
 'create_form_description' =>
-'Remplissez l\'information de base pour le formulaire ci-dessous. Vous pouvez ensuite choisir de construire votre formulaire dans l\'interface \'Drag & Drop\' du Composeur, ou dans un modèle standard d\'ExpressionEngine avec les balises de Freeform.',
+'Remplissez l\'information de base pour le formulaire ci-dessous. Vous pouvez ensuite choisir de construire votre formulaire dans l\'interface \'Glisser & Déposer\' du Composer, ou dans un modèle standard d\'ExpressionEngine avec les tags Freeform.',
 
 'new_form' =>
 'Nouveau Formulaire',
 
 'form_label' =>
-'Label du Formulaire',
+'Etiquette du Formulaire',
 
 'form_label_desc' =>
-'Ceci est le nom complet du Formulaire.<br/>Exemple : Contactez-nous',
+'Ceci est le nom complet du Formulaire.<br/>Exemple: Contactez-nous',
 
 'form_name' =>
 'Nom du Formulaire',
 
 'form_name_desc' =>
-'Nom court du Formulaire. Un mot, sans espace. Les caractères de soulignement (underscore) sont acceptés. Exemple : contactez_nous',
+'Nom court du Formulaire. Un mot, sans espaces, caractères de soulignement (underscore) acceptés. Exemple: contactez_nous',
 
 'form_description_desc' =>
 'Décrivez le Formulaire.<br/>Utile pour connaître le rôle du formulaire.',
@@ -219,10 +292,10 @@ $lang = array(
 'Statut par Défaut',
 
 'default_status_desc' =>
-'Toutes les soumissions utiliseront ce statut, sauf quand précisé dans les paramètres de la balise. Un statut de \'En attente\' (défaut)',
+'Toutes les soumissions utiliseront ce statut sauf quand précisé dans les paramètres du tag. Le statut par défaut est \'En attente\'',
 
 'design_template' =>
-'Design du modèle',
+'Design du modèle',	
 
 'design_template_desc' =>
 'Détermine l\'apparence du formulaire.',
@@ -237,10 +310,10 @@ $lang = array(
 'Aviser l\'Utilisateur',
 
 'notify_admin_desc' =>
-'Activer les avis pour l\'administrateur pour automatiquement envoyer un courriel à l\'administrateur du site quand ce formulaire reçoit une soumission.',
+'Activer les avis pour l\'administrateur pour envoyer automatiquement un courriel à l\'administrateur du site quand ce formulaire reçoit une soumission.',
 
 'notify_user_desc' =>
-'Les avis pour l\'utilisateur requiert un champ qui accepte une adresse courriel. Quand l\'utilisateur entre une adresse courriel, il/elle sera avisé(e) de leur soumission. Si aucun champ n\'est disponible, vous pouvez éditer ce champ plus tard pour en ajouter ou vous pouvez préciser le nom de champ dans les paramètres de la balise.',
+'Les avis pour l\'utilisateur requiert un champ qui accepte une adresse courriel. Quand l\'utilisateur entre une adresse courriel, il/elle sera avisé(e) de sa soumission. Si aucun champ n\'est disponible, vous pouvez éditer ce champ plus tard pour en ajouter ou vous pouvez préciser le nom de champ dans les paramètres du tag.',
 
 'user_email_field' =>
 'Champ Courriel de l\'Utilisateur',
@@ -267,25 +340,28 @@ $lang = array(
 'Continuer',
 
 'continue_desc' =>
-'Sauvegarder ce formulaire et poursuivre sa construction dans le Composeur.',
+'Sauvegarder ce formulaire et poursuivre sa construction dans le Composer.',
+
+'save' =>
+"Enregistrer",
 
 'save_desc' =>
 'Construire ce formulaire plus tard dans un modèle (template) ExpressionEngine.',
 
 'admin_notification_email' =>
-'Addresse Courriel pour aviser l\'administrateur',
+'Adresse Courriel pour aviser l\'administrateur',
 
 'admin_notification_email_desc' =>
 'Les adresses courriel pour envoyer les courriels de notification d\'administrateur quand un formulaire est rempli. Séparez les adresses courriels par des virgules.',
 
 'composer_form_type_desc' =>
-'Construire ce formulaire à l\'aide de l\'interface \'Drag & Drop\'',
+'Construire ce formulaire à l\'aide de l\'interface \'Glisser & Déposer\'',
 
 'template_form_type_desc' =>
 'Coder ce formulaire dans un Modèle ExpressionEngine',
 
 'composer' =>
-'Composeur',
+'Composer',
 
 'template' =>
 'Modèle',
@@ -297,19 +373,23 @@ $lang = array(
 'Champs de Formulaire',
 
 'form_fields_desc' =>
-'Vous devez inclure des champs dans chaque formulaire pour être capable de collecter des données.',
+'Vous devez inclure des champs dans chaque formulaire pour pouvoir collecter des données.',
 
 'auto_generate_name' =>
 'Génération Automatique du Nom',
 
 'click_drag_add_remove_sort' =>
-'Cliquez ou glissez pour ajouter ou enlever des champs. Glissez les champs dans la colonne de droite pour trier. Les champs dans la colonne de droite seront disponibles dans ce formulaire à l\'affichage et seront affichés dans cet ordre quand la paire de balise {all_form_fields} est utilisée.',
+'Cliquez ou glissez pour ajouter ou enlever des champs. Glissez les champs dans la colonne de droite pour trier. Les champs dans la colonne de droite seront disponibles dans ce formulaire à l\'affichage et seront affichés dans cet ordre quand la paire de tag {all_form_fields} est utilisée.',
 
 'return_page_field' =>
-'Entrez un chemin de Retour pour envoyer les utilisateurs une fois qu\'ils ont soumis ce formulaire (ex: \'formulaire/merci\') :',
+'Entrez un chemin de Retour pour y envoyer les utilisateurs une fois qu\'ils auront soumis ce formulaire (ex: \'formulaire/merci\'):',
+
+// -------------------------------------
+//	Composer
+// -------------------------------------
 
 'composer_instructions' =>
-'Cliquez ou glissez un champ spécial ou personnalisé dans la vue du Composeur. Cliquer un élément crée une rangée avec l\'élément à l\'intérieur. Vous pouvez aussi créer vos propres rangées et y glisser des éléments à l\'intérieur. L\'élément de rupture de page fait de ce formulaire un formulaire multi-page.',
+'Cliquez ou glissez un champ spécial ou personnalisé dans la vue du Composer. Cliquer un élément crée une rangée avec l\'élément à l\'intérieur. Vous pouvez aussi créer vos propres rangées et y glisser des éléments à l\'intérieur. L\'élément de rupture de page fait de ce formulaire un formulaire multi-page.',
 
 'insert' =>
 'Insérer',
@@ -341,8 +421,11 @@ $lang = array(
 'submit_button' =>
 'Bouton Soumettre',
 
+'submit_previous_button'=>
+"Bouton Soumettre Précédent",
+
 'search_fields' =>
-'Champs de Recherche',
+'Rechercher des champs',
 
 'finished' =>
 'Complété',
@@ -353,23 +436,26 @@ $lang = array(
 'captcha' =>
 'Captcha',
 
+'sticky_controls' =>
+"Contrôles favoris",
+
 'double_click_to_edit' =>
 'Double-Cliquez pour Éditer',
 
 'double_click_to_edit_recipients' =>
-'Double-Cliquez pour Éditer les Destinataires',
+'Double-Cliquez pour Éditer les destinataires',
 
 'notify_friends' =>
 'Avisez vos Amis',
 
 'notify_instructions' =>
-'Insérez le courriel de vos amis, séparés par des virgules :',
+'Insérez le courriel de vos amis, séparés par virgules :',
 
 'dynrec_edit_instructions' =>
 'Insérez des adresses courriel dans la colonne 1 et les noms qui seront visibles dans la colonne 2.',
 
 'dynrec_output_label' =>
-'Label d\'Affichage pour Destinataires Dynamiques',
+'Etiquette d\'Affichage pour Destinataires Dynamiques',
 
 'select_dropdown' =>
 'Liste déroulante',
@@ -380,24 +466,31 @@ $lang = array(
 'dynrec_output_type' =>
 'Type d\'Affichage pour Destinataires Dynamiques',
 
+//lower case on purpose
 'delete_lower' =>
 'supprimer',
 
+//lower case on purpose
 'delete_row_lower' =>
-'supprimer la rangée',
+'supprimer rangée',
 
+//lower case on purpose
 'delete_field_lower' =>
-'supprimer le champ',
+'supprimer champ',
 
+//lower case on purpose
 'require_field_lower' =>
-'rendre le champ obligatoire',
+'rendre champ obligatoire',
 
+//lower case on purpose
 'unrequire_field_lower' =>
 'rendre le champ non-obligatoire',
 
+//lower case on purpose
 'add_column' =>
 'ajouter une colonne',
 
+//lower case on purpose
 'remove_column' =>
 'supprimer une colonne',
 
@@ -405,16 +498,16 @@ $lang = array(
 'Aperçu',
 
 'allowed_html_tags' =>
-'Balises HTML Acceptées : ',
+'Tags HTML Acceptées : ',
 
 'captcha_input_instructions' =>
 'Veuillez entrer le mot que vous voyez dans l\'image ci-dessous :',
 
 'composer_data_saved' =>
-'Données du Composeur Sauvegardées',
+'Données du Composer Sauvegardées',
 
 'composer_preview' =>
-'Aperçu du Composeur',
+'Aperçu du Composer',
 
 'missing_submits' =>
 'Une ou plusieurs pages de votre formulaire n\'ont pas de bouton \'Soumettre\'. Ceci peut causer des problèmes pour ceux qui soumettent le formulaire.',
@@ -426,7 +519,11 @@ $lang = array(
 'Effacer toutes les rangées',
 
 'clear_all_warning' =>
-'Êtes-vous sûr(e) que vous voulez effacer tous les éléments du Composeur? Vous ne pouvez pas annuler cette action.',
+'Êtes-vous sûr(e) de vouloir effacer tous les éléments du Composer ? Vous ne pouvez pas annuler cette action.',
+
+// -------------------------------------
+//	view/moderate entries
+// -------------------------------------
 
 'entries' =>
 'Entrées',
@@ -444,13 +541,16 @@ $lang = array(
 'Auteur(e)',
 
 'ip_address' =>
-'Addresse&nbsp;IP',
+'Adresse&nbsp;I.P.',
 
 'entry_date' =>
 'Date&nbsp;de&nbsp;l\'Entrée',
 
 'edit_date' =>
 'Date&nbsp;d\'Édition',
+
+'status' =>
+"Statut",
 
 'never' =>
 'Jamais',
@@ -467,17 +567,20 @@ $lang = array(
 'submit' =>
 'Soumettre',
 
+'submit_previous' =>
+"Soumettre le précédent",
+
 'view' =>
 'Afficher',
 
 'no_entries_for_form' =>
-'Il n\'y a pas d\'entrée pour ce formulaire.',
+'Il n\'y a pas d\'entrées pour ce formulaire.',
 
 'edit_field_layout' =>
-'Éditer l\'Emplacement des Champs',
+'Éditer la Disposition des Champs',
 
 'layout_saved' =>
-'Emplacement sauvegardé.',
+'Disposition sauvegardée.',
 
 'keywords' =>
 'Mots clés',
@@ -495,16 +598,19 @@ $lang = array(
 'Mois Précédent',
 
 'this_year' =>
-'Cette Année',
+'Cette Annéee',
 
 'choose_date_range' =>
 'Choisir les Dates',
 
 'start_date' =>
-'Date de Départ',
+'Date de Début',
 
 'end_date' =>
-'Date Finale',
+'Date de fin',
+
+'moderate' =>
+"Modérer",
 
 'form_field' =>
 'Champ de Formulaire',
@@ -522,13 +628,16 @@ $lang = array(
 'Aucun résultat pour cette recherche',
 
 'viewing_moderation' =>
-'Vous visionnez les soumissions pour &quot;<strong>%form_label%</strong>&quot;. Leur statut est &quot;En Attente&quot;. Approuver celles-ci changera leur statut pour &quot;Ouvert&quot;.',
+'Vous visionnez les soumissions pour &quot;<strong>%form_label%</strong>&quot;. leur statut est &quot;En Attente&quot;. Approuver celles-ci changera leur statut à &quot;Ouvert&quot;.',
 
 'approve_selected' =>
 'Approuver les éléments Sélectionnés',
 
 'edit_selected' =>
 'Éditer les éléments Sélectionnés',
+
+'delete_selected' =>
+"Supprimer les éléments Sélectionnés",
 
 'entries_deleted' =>
 'Entrée(s) Supprimée(s)',
@@ -537,10 +646,14 @@ $lang = array(
 'Êtes-vous sûr(e) de vouloir supprimer les données de façon permanente ?',
 
 'must_select_group' =>
-'Pour sauvegarder cet emplacement, vous devez l\'assigner à un ou plusieurs groupes ci-dessous.',
+'Pour sauvegarder cet emplacement, vous devez l\'assigner à au moins un des groupes ci-dessous.',
 
 'download_started' =>
-'Votre export de données est en train d\'être préparé et sera téléchargé lorsque complété.',
+'Votre export de données est en train d\'être préparé et sera téléchargé une fois finalisé.',
+
+// -------------------------------------
+//	edit entries
+// -------------------------------------
 
 'new_entry' =>
 'Nouvelle Entrée',
@@ -552,7 +665,7 @@ $lang = array(
 'Titre de Groupe',
 
 'screen_name' =>
-'Nom d\'Écran',
+'Pseudo',
 
 'guest' =>
 'Visiteur',
@@ -562,6 +675,13 @@ $lang = array(
 
 'new_entry_success' =>
 'Nouvelle Entrée Créée',
+
+// -------------------------------------
+//	column prefs
+// -------------------------------------
+
+'edit_field_layout' =>
+"Modifier la disposition des champs",
 
 'hidden_fields' =>
 'Champs Cachés',
@@ -584,8 +704,19 @@ $lang = array(
 'everyone' =>
 'Tout le Monde',
 
+// -------------------------------------
+//	sub layouts
+// -------------------------------------
+
 'field_entry_view' =>
 'Entrées',
+
+// -------------------------------------
+//	export
+// -------------------------------------
+
+'export' =>
+"Exporter",
 
 'txt' =>
 'Texte',
@@ -605,23 +736,36 @@ $lang = array(
 'export_entries' =>
 'Exporter les Entrées',
 
+'shown_fields' =>
+"Champs affichés",
+
 'all_fields' =>
 'Tous les Champs',
+
+'format_dates' =>
+"Format&nbsp;Dates",
+
+// -------------------------------------
+//	multi-item rows for fields
+// -------------------------------------
 
 'multi_list_items' =>
 'Éléments Multi-Liste',
 
 'multi_list_items_desc' =>
-'Choisissez parmi les 4 types de listes multi-sélections :<br/><br/> - Liste<br/> - Liste d\'une paire Valeur/Label<br/> - Liste à partir d\'un Champ de Canal<br/> - Zone de Texte délimitée par Nouvelles Lignes (Newline Delimited)<br/><br/>Des insertions en blanc se créeront quand le dernier élément sera utilisé.',
+'Choisissez parmi les 4 types de listes multi-sélections:<br/><br/> - Liste<br/> - Liste d\'une paire Valeur/Etiquette<br/> - Liste à partir d\'un Champ de Canal<br/> - Zone de Texte délimitée par Nouvelles Lignes<br/><br/>Des insertions en blanc se créeront une fois le dernier élément utilisé.',
 
 'load_from_channel_field' =>
 'Charger à partir d\'un Champ de Canal',
+
+'title' =>
+"Titre",
 
 'url_title' =>
 'Titre URL',
 
 'value_label_list' =>
-'Liste Valeur/Label',
+'Liste Valeur/Etiquette',
 
 'list_type' =>
 'Type de Liste',
@@ -636,7 +780,7 @@ $lang = array(
 'Ceci est une simple liste de valeurs. Insérez chaque valeur dans un champ.',
 
 'type_value_label_desc' =>
-'Ceci est un liste valeur/label. La valeur est la donnée qui est sauvegardée pour le choix et le label est ce qui est affiché comme choix aux utilisateurs.',
+'Ceci est un liste valeur/étiquette. La valeur est la donnée qui est sauvegardée pour le choix et l\'étiquette est affichée comme choix pour les utilisateurs.',
 
 'channel_field_list_desc' =>
 'Ceci prendra toutes les données d\'un seul champ de canal et en fera une liste.',
@@ -644,11 +788,15 @@ $lang = array(
 'type_nld_textarea_desc' =>
 'Ceci est une Zone de Texte délimitée par de Nouvelles Lignes. Ceci créera un élément de liste pour chaque ligne non-vide de la liste.',
 
+// -------------------------------------
+//	show fields
+// -------------------------------------
+
 'type' =>
 'Type',
 
 'label' =>
-'Label',
+'Etiquette',
 
 'name' =>
 'Nom',
@@ -656,11 +804,15 @@ $lang = array(
 'description' =>
 'Description',
 
+// -------------------------------------
+//	field types
+// -------------------------------------
+
 'fieldtypes' =>
 'Types de Champs',
 
 'no_fieldtypes' =>
-'Aucun Types de Champ disponible.<br/>Quoi, vous avez aussi supprimé les champs par défaut ? O_o',
+'Aucun Types de Champ disponible.<br/>Quoi, vous avez aussi supprimé tous les champs par défaut ? O_o',
 
 'no_fieldtypes_submitted' =>
 'Aucun Type de Champ soumis.',
@@ -680,8 +832,14 @@ $lang = array(
 'freeform_fieldtype_name' =>
 'Nom du Type de Champ Freeform',
 
+'description' =>
+"Description",
+
 'version' =>
 'Version',
+
+'status' =>
+"Statut",
 
 'action' =>
 'Action',
@@ -707,11 +865,23 @@ $lang = array(
 'fieldtype_install_error' =>
 'Une erreur inconnue est survenue en essayant d\'installer ce type de champ.',
 
+// -------------------------------------
+//	default field types
+// -------------------------------------
+
+// -------------------------------------
+//	Checkbox
+// -------------------------------------
+
 'default_checkbox_name' =>
 'Case à Cocher',
 
 'default_checkbox_desc' =>
-'Un champ avec une seule case à cocher avec les options "o" ou "n".',
+'Un champ avec une seule case à cocher avec les options "y" ou "n".',
+
+// -------------------------------------
+//	Checkbox Group
+// -------------------------------------
 
 'default_checkbox_group_name' =>
 'Groupe de Cases à Cocher',
@@ -719,11 +889,19 @@ $lang = array(
 'default_checkbox_group_desc' =>
 'Un champ qui contient un groupe de cases à cocher pour des choix multiples.',
 
+// -------------------------------------
+//	country select
+// -------------------------------------
+
 'default_country_name' =>
 'Sélection de Pays',
 
 'default_country_desc' =>
 'Un menu déroulant de pays. Chargés à partir de ./system/expressionengine/config/countries.php',
+
+// -------------------------------------
+//	hidden
+// -------------------------------------
 
 'default_hidden_name' =>
 'Champ Caché',
@@ -735,10 +913,14 @@ $lang = array(
 'Données Entrante par Défaut',
 
 'default_hidden_field_data_desc' =>
-'Utilisez ceci pour déterminer la donnée par défaut qui sera fixée pour la valeur du champ caché.<br/><br/>Les données acceptées comprennent les balises et crochets ExpressionEngine, ainsi que les champs spéciaux. Tout HTML sera enlevé de ce réglage.<br/><br/>Utilisez CURRENT_URL pour utiliser l\'URL où l\'utilisateur était quand il/elle a soumi(se) la page. Étant donné les restrictions du PHP, toutes les données positionnées après des \'hash tags\' \'http://site.com/#item\' ne seront pas retrouvables.',
+'Utilisez ceci pour fixer la donnée par défaut qui sera fixée pour la valeur du champ caché.<br/><br/>Les données acceptées comprennent les tags et crochets ExpressionEngine, ainsi que les champs spéciaux. Tout HTML sera enlevé de ce réglage.<br/><br/>Utilisez CURRENT_URL pour utiliser l\'URL où l\'utilisateur était quand il/elle a soumi(se) la page. Étant donné les restrictions du PHP, toute donnée après des hash tags \'http://site.com/#item\' ne seront pas récupérables.',
 
 'hidden_field_not_shown' =>
-'Champ Caché : ceci ne sera pas visible sur le site.',
+'Champ Caché : ceci ne sera pas visible sur le site (en frontal).',
+
+// -------------------------------------
+//	mailinglist field
+// -------------------------------------
 
 'default_mailinglist_name' =>
 'Mailinglist',
@@ -750,7 +932,7 @@ $lang = array(
 'Liste de diffusion Invalide',
 
 'no_mailinglists' =>
-'Aucune liste de diffusion disponible.',
+'Aucunne liste de diffusion disponible.',
 
 'opt_in_by_default' =>
 'Opter de participer par défaut',
@@ -776,6 +958,10 @@ $lang = array(
 'show_lists_by_default_desc' =>
 'N\'afficher que ces listes.',
 
+// -------------------------------------
+//	File Upload
+// -------------------------------------
+
 'default_file_name' =>
 'Téléchargement de Fichier',
 
@@ -783,13 +969,13 @@ $lang = array(
 'Un champ qui permet à un utilisateur de télécharger des fichiers.',
 
 'file_upload_location' =>
-'Destination du Téléchargement de Fichier',
+'Répertoire de téléchargement',
 
 'file_upload_location_desc' =>
-'Où seront téléchargés les fichiers ? Vous pouvez utiliser la configuration pour les répertoires EE standard ou spécifier un nouveau chemin (path)..',
+'Où seront téléchargés les fichiers ? Vous pouvez utiliser la configuration du répertoire de téléchargement standard d\'EE ou préciser un nouveau chemin...',
 
 'file_upload_missing_error' =>
-'Une destination pour le téléchargement est requise pour que le champ téléchargement de fichier fonctionne.',
+'Une destination pour le téléchargement est obligatoire pour que le champ téléchargement de fichier fonctionne.',
 
 'invalid_file_upload_preference' =>
 'ID de destination pour le téléchargement de fichier invalide.',
@@ -798,25 +984,25 @@ $lang = array(
 'Vous n\'avez aucune configuration pour le téléchargement de fichier et vous avez besoin d\'au moins une destination pour pouvoir télécharger des fichiers avec ce champ.',
 
 'specify_upload_location' =>
-'Spécifier ma propre destination pour les téléchargements',
+'Préciser ma propre destination pour les téléchargements',
 
 'full_path_to_folder' =>
-'Chemin complet (Full path) vers le répertoire accessible pour l\'écriture',
+'Chemin complet vers le répertoire accessible en écriture',
 
 'system_information' =>
 'Information Système',
 
 'system_information_desc' =>
-'Ceci est une information utile récupérée à partir de vos paramètres php.ini. Cette information ne peut être changée dans ces options de champ, mais se change dans votre fichier php.ini.',
+'Ceci est de l\'information utile récupérée dans vos préférences php.ini. Cette information ne peut être changée dans ces options de champ, mais peut être modifiée dans votre fichier php.ini.',
 
 'max_file_upload_size' =>
 'Taille maximum du téléchargement d\'un seul fichier :',
 
 'max_files_uploadable' =>
-'Le nombre maximum de fichiers qui peuvent être téléchargés lors d\'une seule soumission :',
+'Le nombre maximum de fichiers qui peuvent être téléchargées lors d\'un seule soumission :',
 
 'allowed_upload_count' =>
-'Compte de téléchargement accepté',
+'Quantité maxi de téléchargements',
 
 'allowed_upload_count_desc' =>
 'Quantité maximum de fichiers qui peuvent être téléchargés lors d\'une seule soumission.<br/><br/><strong class=\'ss_notice\'>Le nombre maximum dans ce menu déroulant provient de la configuration système PHP pour le maximum de fichiers qui peuvent être téléchargés lors d\'une soumissions et ne peut pas être modifié en utilisant le type de champ pour fichier multiples.</strong>',
@@ -825,7 +1011,7 @@ $lang = array(
 'Remplacer pendant l\'édition',
 
 'overwrite_on_edit_desc' =>
-'Pendant l\'édition d\'une entrée et lorsque de nouveaux fichiers sont téléchargés, remplacer la version précédente avec la nouvelle version.',
+'Pendant l\'édition d\'une entrée et que de nouveaux fichiers sont téléchargés, remplacer la version précédente avec la nouvelle version.',
 
 'disable_xss_clean' =>
 'Désactiver le nettoyage XSS',
@@ -839,14 +1025,21 @@ $lang = array(
 'no_files_uploaded' =>
 'Aucun Fichier Téléchargé',
 
+//file size abbreviation for KiloBytes
 'kb' =>
-'KB',
+'KO',
 
 'filesize' =>
 'Taille du Fichier',
 
 'filename' =>
 'Nom du Fichier',
+
+'download' =>
+'Télécharger',
+
+'front_end_link' =>
+'Lien sur le site (en frontal)',
 
 'file_location' =>
 'Emplacement du Fichier',
@@ -861,25 +1054,29 @@ $lang = array(
 'Types de Fichiers Acceptés',
 
 'allowed_file_types_desc' =>
-'Quels types de fichiers voulez-vous accepter ? Écrivez l\'extension de chaque type de fichier acceptable séparée par un caractère tuyau, ex. \'jpg|png|gif\'. Ecrivez un astérisque, \'*\' pour accepter tous les types de fichiers disponibles.',
+'Quels types de fichiers voulez-vous accepter ? Écrivez l\'extension de chaque type de fichier acceptable séparé par un caractère tuyau, ex. \'jpg|png|gif\'. Ecrivez un astérisque, \'*\', pour accepter tous les types de fichiers disponibles.',
 
 'email_attachments' =>
 'Envoyer les pièces jointes par Courriel',
 
 'email_attachments_desc' =>
-'Attacher le fichier au courriel de notification ? Il y a quatre types de notifications.<br/><br/> - Admin<br/> - Utilisateur (user)<br/> - Destinataires Dynamiques<br/> - Destinataires insérés par l\'Utilisateur<br/>',
+'Attacher le fichier au courriel de notification? Il y a quatre types de notifications.<br/><br/> - Admin<br/> - Utilisateur (user)<br/> - Destinataires Dynamiques<br/> - Destinataires insérés par l\'Utilisateur<br/>',
 
 'dynamic_recipients' =>
 'Destinataires Dynamiques',
 
 'user_recipients' =>
-'Destinataires de l\'Utilisateur',
+'Destinataires d\'Utilisateur',
 
 'cannot_find_file' =>
 'Fichier introuvable',
 
-'upload_directory_name' =>
-'Nom du répertoire de destination',
+'upload_preference_name' =>
+"Nom pour l\'emplacement de téléchargement préféré",
+
+// -------------------------------------
+//	MultiSelect
+// -------------------------------------
 
 'default_multiselect_name' =>
 'Sélection Multiple',
@@ -887,11 +1084,19 @@ $lang = array(
 'default_multiselect_desc' =>
 'Un champ qui contient une liste d\'éléments qui peuvent avoir de multiples sélections.',
 
+// -------------------------------------
+//	Province select
+// -------------------------------------
+
 'default_provinces_name' =>
 'Sélection de Province',
 
 'default_provinces_desc' =>
 'Un menu déroulant des provinces et territoires Canadiens. Chargés à partir du fichier de langue de Freeform.',
+
+// -------------------------------------
+//	Radio
+// -------------------------------------
 
 'default_radio_name' =>
 'Bouton Radio',
@@ -899,11 +1104,19 @@ $lang = array(
 'default_radio_desc' =>
 'Un champ à choix d\'option unique en utilisant des boutons radio.',
 
+// -------------------------------------
+//	Select
+// -------------------------------------
+
 'default_select_name' =>
 'Menu déroulant',
 
 'default_select_desc' =>
 'Un champ qui contient un menu déroulant de choix.',
+
+// -------------------------------------
+//	State Select
+// -------------------------------------
 
 'default_state_name' =>
 'Sélection d\'État',
@@ -911,17 +1124,21 @@ $lang = array(
 'default_state_desc' =>
 'Un menu déroulant d\'états et territoires des États-Unis. Chargés à partir du fichier de langue de Freeform.',
 
+// -------------------------------------
+//	Text Input
+// -------------------------------------
+
 'default_text_name' =>
 'Texte',
 
 'default_text_desc' =>
-'Un champ pour insertion de texte sur une seule ligne.',
+'Un champ pour insérer du texte sur une seule ligne.',
 
 'integer' =>
 'Nombre Entier',
 
 'decimal' =>
-'Décimal',
+'Nombre Décimal',
 
 'number' =>
 'Nombre',
@@ -930,7 +1147,7 @@ $lang = array(
 'Courriel',
 
 'any' =>
-'N\'importe quoi',
+'N\'importe lequel',
 
 'field_content_type' =>
 'Type de Contenu du Champ',
@@ -938,23 +1155,31 @@ $lang = array(
 'field_content_type_desc' =>
 'Permet de choisir un type de validation pour ce champ texte.',
 
+// -------------------------------------
+//	Textarea
+// -------------------------------------
+
 'default_textarea_name' =>
 'Zone de Texte',
 
 'default_textarea_desc' =>
-'Un champ pour insertion de texte sur plusieurs lignes.',
+'Un champ pour insérer du texte sur plusieurs lignes.',
 
 'textarea_rows' =>
 'Nombre de rangées de la Zone de Texte',
 
 'textarea_rows_desc' =>
-'Le nombre de rangées par défaut à afficher.',
+'Le nombre de rangées à afficher par défaut.',
 
 'disallow_html_rendering' =>
 'Refuser le traitement HTML',
 
 'disallow_html_rendering_desc' =>
-'Par défaut, les balises HTML seront encodés pour qu\'elles ne soient pas traitées durant l\'affichage. Ceci permet d\'éviter aux utilisateurs d\'insérer du HTML et afficher des images ou de l\'affichage personnalisé sur vos pages. Désactiver ceci permet de traiter l\'HTML lors de l\'affichage',
+'Par défaut, les balises HTML seront encodées pour qu\'elles ne soient pas traitées durant l\'affichage. Ceci permet d\'interdire aux utilisateurs d\'insérer du HTML et d\'afficher des images ou de l\'affichage personnalisé sur vos pages. Désactiver ceci permet de traiter l\'HTML lors de l\'affichage.',
+
+//----------------------------------------
+//  edit field
+//----------------------------------------
 
 'edit_field_success' =>
 'Champ Sauvegardé',
@@ -966,10 +1191,13 @@ $lang = array(
 'Créer un Champ',
 
 'fields_deleted' =>
-'Les champs indiqués ont été supprimés.',
+'Les champs indiqués ont étés supprimés.',
 
 'new_field' =>
 'Nouveau Champ',
+
+'fields' =>
+"Champs",
 
 'field' =>
 'Champ',
@@ -978,16 +1206,16 @@ $lang = array(
 'Type de Champ',
 
 'field_label' =>
-'Label du Champ',
+'Etiquette du Champ',
 
 'field_label_desc' =>
-'Le nom complet du champ. Exemple : Nom de Famille.',
+'Le nom complet du champ. Exemple: Nom de Famille.',
 
 'field_name' =>
 'Nom du Champ',
 
 'field_name_desc' =>
-'Nom court du champ. Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés. Exemple : nom_de_famille',
+'Nom court du champ. Un mot, pas d\'espaces, traits de soulignement (underscores) acceptés. Exemple: nom_de_famille',
 
 'field_order' =>
 'Ordre du Champ',
@@ -999,7 +1227,7 @@ $lang = array(
 'Longueur du Champ',
 
 'field_length_desc' =>
-'Longueur maximale des données entrées.',
+'Longueur maximum des données entrées.',
 
 'field_display_options' =>
 'Options d\'Affichage du Champ',
@@ -1017,7 +1245,7 @@ $lang = array(
 'Afficher le champ sur la page de modération dans le Panneau de Contrôle ?',
 
 'composer_use' =>
-'Permettre au champ d\'être utilisé dans le Composeur Freeform ?',
+'Permettre de champ d\'être utilisé dans le Composer Freeform ?',
 
 'field_description' =>
 'Description du Champ',
@@ -1026,7 +1254,7 @@ $lang = array(
 'Décrivez le champ. Vous pouvez utiliser ceci pour retracer l\'utilisation du champ et pour insérer dans vos formulaires.',
 
 'field_edit_instructions' =>
-'Entrez/Mettez à jour l\'information de champ ci-dessous. Vous pouvez utiliser ce champ dans le Composeur Freeform ou dans un modèle avec les balises de modèle Freeform.',
+'Entrez ou mettez à jour ci-dessous les informations pour ce champ. Vous pouvez utiliser ce champ dans le Composer Freeform ou dans un template avec les tags de template Freeform.',
 
 'generate' =>
 'Générer',
@@ -1041,10 +1269,14 @@ $lang = array(
 'Ajouter au(x) Formulaire(s)',
 
 'add_to_freeform_desc' =>
-'Ajouter ces champs aux formulaires lors de la sauvegarde. Les formulaires où ce champ est déjà disponible sont présentés à droite.',
+'Ajouter ce champ aux formulaires lors de la sauvegarde. Les formulaires auxquels ce champ est déjà affecté sont affichés à droite.',
 
 'add_to_freeform_notice' =>
-'Si vous décidez de retirer ce champ de tous les formulaires, toute donnée associée avec le champ dans ces formulaires sera supprimée !',
+'Si vous décidez de retirer ce champ d\'un formulaire, toute donnée associée à ce champ dans ce formulaire sera supprimée !',
+
+// -------------------------------------
+//	notifications
+// -------------------------------------
 
 'no_notifications' =>
 'Aucune Notification n\'existe actuellement.',
@@ -1068,40 +1300,40 @@ $lang = array(
 'Créer une Notification',
 
 'allow_html' =>
-'Permettre l\'HTML',
+'Autoriser l\'HTML',
 
 'wordwrap' =>
-'Retour à la ligne',
+'Retour à la ligne (Word Wrap)',
 
 'formatting_options' =>
-'Options de Formattage',
+'Options de Formatage',
 
 'notification_label' =>
-'Label de la Notification',
+'Etiquette de la Notification',
 
 'notification_label_desc' =>
-'Le nom complet de la Notification. Exemple : Succès de Soumission',
+'Le nom complet de la Notification. Exemple: Succès de Soumission',
 
 'notification_name' =>
 'Nom de la Notification',
 
 'notification_name_desc' =>
-'Le nom court de la notification.<br/>Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés.<br/>Exemple : succes_de_soumission',
+'Le nom court de la notification.<br/>Un mot, pas d\'espaces, traits de soulignement (underscores) acceptés.<br/>Exemple: succes_de_soumission',
 
 'from_email' =>
-'Champ \'De\' pour Courriel',
+'Adresse courriel pour le champ \'De\' (From)',
 
 'from_email_desc' =>
 'L\'adresse courriel qui apparaîtra dans la partie \'De\' de votre courriel de notification.',
 
 'from_name' =>
-'Nom pour le champ \'De\' ',
+'Nom pour le champ \'De\' (From)',
 
 'from_name_desc' =>
 'Le nom qui apparaîtra dans la partie \'De\' de votre courriel de notification.',
 
 'reply_to_email' =>
-'Courriel pour \'Répondre à\' ',
+'Courriel pour \'Répondre à\' (Reply To)',
 
 'reply_to_email_desc' =>
 'Ceci est l\'adresse courriel à qui le destinataire va répondre quand il/elle reçoit cette notification.',
@@ -1110,7 +1342,7 @@ $lang = array(
 'Objet',
 
 'email_subject_desc' =>
-'La ligne de l\'objet de la notification. Les variables suivantes sont disponibles : {my_custom_field}, {freeform_entry_id}, {entry_date}, {form_name}, {form_id}, {form_label}',
+'La ligne de l\'objet de la notification. Les variables suivantes sont disponibles: {my_custom_field}, {freeform_entry_id}, {entry_date}, {form_name}, {form_id}, {form_label}',
 
 'notification_description' =>
 'Description',
@@ -1119,7 +1351,7 @@ $lang = array(
 'Description de la Notification.<br/>Utile pour retracer le but de la Notification.',
 
 'notification_edit_instructions' =>
-'Ceci sont les modèles qui sont utilisés pour formatter et générer des notifications par courriel pour les administrateur et/ou les utilisateurs. Une fois que vous avez créé un modèle de notification, spécifiez-le quand vous crééz ou éditez un formulaire dans le Panneau de Contrôle, ou quand vous remplacez sa valeur dans votre modèle EE.',
+'Ceci sont les templates qui sont utilisés pour formater et générer des notifications par courriel pour les administrateur et/ou les utilisateurs. Une fois que vous avez créé un template de notification, spécifiez-le quand vous créez ou éditez un formulaire dans le Panneau de Contrôle, ou quand vous remplacez sa valeur dans votre template EE.',
 
 'email_message' =>
 'Message du Courriel',
@@ -1134,7 +1366,7 @@ $lang = array(
 'Cliquez pour insérer vos champs personnalisés',
 
 'click_insert_standard_tags' =>
-'Cliquez pour insérer vos balises standard',
+'Cliquez pour insérer vos tags standard',
 
 'search' =>
 'Recherche',
@@ -1143,25 +1375,28 @@ $lang = array(
 'Notification par Défaut',
 
 'default_notification_subject' =>
-'Quelqu\'un a rempli le formulaire : {form_label}',
+'Quelqu\'un a rempli le formulaire: {form_label}',
 
 'default_notification_template' =>
-'Quelqu\'un a rempli le formulaire : {form_label}Voici les détails : {all_form_fields_string}',
+'Quelqu\'un a rempli le formulaire: {form_label}
+Voici les détails:
+
+{all_form_fields_string}',
 
 'include_attachments' =>
-'Inclure les Pièces jointes',
+'Inclure les pièces jointes',
 
 'include_attachments_desc' =>
-'Certains champs Freeform acceptent des téléchargements de fichiers. En activant cette option, les fichiers en pièce jointe sont envoyés par courriel avec la notification.',
+'Certains champs Freeform acceptent des téléchargements de fichiers. En activant cette option, les fichiers en pièces jointes seront envoyés par courriel avec la notification.',
 
 'uploads' =>
 'Téléchargements',
 
 'upload_count' =>
-'Compteur de Téléchargement',
+'Compteur de téléchargement',
 
 'freeform_file_field_upload_count' =>
-'Compteur des Champ de Fichier Téléchargement Freeform',
+'Compteur des Champs Téléchargements de Fichiers Freeform',
 
 'attachments' =>
 'Pièces jointes',
@@ -1170,67 +1405,71 @@ $lang = array(
 'Pièce jointe',
 
 'confirm_delete_notification' =>
-'Êtes-vous sûr(e) que vous voulez supprimer cette notification définitivement ?',
+'Êtes-vous sûr(e) de vouloir supprimer définitivement cette notification ?',
+
+// -------------------------------------
+//	templates
+// -------------------------------------
 
 'confirm_delete_template' =>
-'Êtes-vous sûr(e) que vous voulez supprimer ce Modèle Composeur définitivement ?',
+'Êtes-vous sûr(e) de vouloir supprimer définitivement ce Template Composer ?',
 
 'no_templates' =>
-'Aucun Modèle Composeur n\'existe déjà.',
+'Aucun Template Composer n\'existe pour le moment.',
 
 'template_edit_warning' =>
-'Les formulaires suivants utilisent ce Modèle Composeur : <strong>%form_names%</strong>',
+'Les formulaires suivants utilisent ce Template Composer: <strong>%form_names%</strong>',
 
 'new_template' =>
-'Nouveau Modèle Composeur',
+'Nouveau Template Composer',
 
 'update_template' =>
-'Mettre à Jour le Modèle',
+'Mettre à Jour le Template',
 
 'create_template' =>
-'Créer un Modèle',
+'Créer un Template',
 
 'template_label' =>
-'Label pour le Modèle Composeur',
+'Etiquette pour Template Composer',
 
 'template_label_desc' =>
-'Le nom complet du Modèle Composeur. Exemple : Modèle Formulaire Blog',
+'Le nom complet du Template Composer. Exemple: Template Formulaire Blog',
 
 'template_name' =>
-'Nom du Modèle Composeur',
+'Nom du Template Composer',
 
 'template_name_desc' =>
-'The nom court du Modèle Composeur.<br/>Un mot, pas d\'espaces. Les traits de soulignement (underscores) sont acceptés.<br/>Exemple : modèle_formulaire_blog',
+'The nom court du Template Composer.<br/>Un mot, pas d\'espaces, traits de soulignement (underscores) acceptés.<br/>Exemple: template_formulaire_blog',
 
 'template_description' =>
-'Description du Modèle Composeur',
+'Description du Template Composer',
 
 'template_description_desc' =>
-'Décrit le Modèle Composeur.<br/>Utile pour connaître le rôle du Modèle Composeur.',
+'Décrit le Template Composer.<br/>Utile pour connaître le rôle du Template Composer.',
 
 'template_edit_instructions' =>
-'Ceci vous permet de créer des modèles de style pour vos formulaires basés sur le Composeur. Vous pouvez contrôler comment l\'affichage, le style, et le formattage sont traités.',
+'Ceci vous permet de créer des template de style pour vos formulaires basés sur le Composer. Vous pouvez contrôler comment l\'affichage, le style, et le formatage sont traités.',
 
 'edit_template_success' =>
-'Modèle Composeur Sauvegardé',
+'Template Composer Sauvegardé',
 
 'delete_template_success' =>
-'Modèle(s) Composeur Supprimé(s)',
+'Template(s) Composer Supprimé(s)',
 
 'default_template' =>
-'Modèle Composeur par Défaut',
+'Template Composer par Défaut',
 
 'enable_template' =>
-'Activer le Modèle Composeur',
+'Activer le Template Composer',
 
 'composer_template' =>
-'Modèle Composeur',
+'Template Composer',
 
 'quick_save' =>
 'Sauvegarde Rapide',
 
 'template_params' =>
-'Paramètres du Modèle',
+'Paramètres du Template',
 
 'param_name' =>
 'Nom du Paramètre',
@@ -1239,10 +1478,14 @@ $lang = array(
 'Valeur du Paramètre',
 
 'template_params_desc' =>
-'Ajoutez des paramètres par défaut à votre affichage Composeur. Ceux-ci peuvent être n\'importe quel paramètre disponible avec {exp:freeform:form}. <div class=\'ss_notice\'>Ceci écrasera tout paramètre défini par le Composeur Freeform.</div>',
+'Ajoutez des paramètres par défaut à votre affichage Composer. Ceux-ci peuvent être n\'importe quel paramètre disponible avec {exp:freeform:form}. <div class=\'ss_notice\'>Ceci écrasera tout paramètre défini par le Composer Freeform.</div>',
 
 'template_name_exists' =>
-'Un Modèle Composeur du même nom existe déjà.',
+'Un Template Composer du même nom existe déjà.',
+
+//----------------------------------------
+//  Utilities
+//----------------------------------------
 
 'collections' =>
 'Collections',
@@ -1284,19 +1527,23 @@ $lang = array(
 'Le nom du formulaire était vide.',
 
 'missing_data_for_field_creation' =>
-'Incapable de créer un champ dû à des données manquantes.',
+'Impossible de créer un champ : des données sont manquantes.',
+
+// -------------------------------------
+// 	Language for permissions
+// -------------------------------------
 
 'permission' =>
-'autorisation',
+'permission',
 
 'save_permissions' =>
-'Sauvegarder les Autorisations',
+'Sauvegarder les Permissions',
 
 'permissions_updated' =>
-'Autorisations Mises à Jour',
+'Permissions Mises à Jour',
 
 'allow_all' =>
-'Tout Autoriser',
+'Tout Permettre',
 
 'deny_all' =>
 'Tout Refuser',
@@ -1305,28 +1552,81 @@ $lang = array(
 'Par Groupe',
 
 'allow' =>
-'Autoriser',
+'Permettre',
 
 'deny' =>
 'Refuser',
 
 'permissions_description' =>
-'Ces autorisations permettent ou interdisent aux groupes de membres le visionnement de certains onglets dans le panneau de contrôle du module. Si un groupe n\'a pas l\'autorisation d\'accéder à un onglet et essaie tout de même d\'y accéder manuellement, il sera redirigé. Si le groupe n\'a accès à aucun onglet, il sera redirigé vers la page d\'accueil du Panneau de Contrôle ExpressionEngine. Les Super Administrateurs ont toujours accès (quels que soient les réglages).',
+'Ces permissions permettent ou refusent aux groupes de membres la vue de certains onglets dans le panneau de contrôle du module. Si un groupe a un onglet refusé et essaie d\'y accéder manuellement il sera redirigé. Si le groupe n\'a accès à aucun onglet, il sera redirigé vers la page d\'accueil du Panneau de Contrôle ExpressionEngine. Les Super Admins ont toujours accès à tout.',
 
 'global_permissions_description' =>
-'En cochant les autorisations globales, vous configurez ce groupe d\'autorisation pour tous les sites.',
+'En cochant les permissions globales, vous configurez ce groupe de permissions pour tous les sites.',
 
 'use_global_permissions' =>
-'Utiliser les Autorisations Globales',
+'Utiliser les Permissions Globales',
 
 'default_permissions_new_group' =>
-'Autorisations par Défaut pour Nouveaux Groupes',
+'Permissions par Défaut pour Nouveaux Groupes',
 
 'default_permissions_new_group_desc' =>
-'Réglez les autorisations par défaut pour les nouveaux groupes de membres pour n\'importe quelle page réglée \'Par Groupe\'.',
+'Réglez les permissions par défaut pour les nouveaux groupes de membres pour n\'importe quelle page réglée \'Par Groupe\'.',
 
 'mcp_tab_permissions' =>
-'Autorisations pour les Onglets du Panneau de Contrôle du Module',
+'Permissions pour les Onglets du Panneau de Contrôle du Module',
+
+// -------------------------------------
+// 	Language for Email Logs
+// -------------------------------------
+
+'email_logs' =>
+"Journaux Courriels",
+
+'success_reported' =>
+'Succès rapporté',
+
+'from' =>
+"De",
+
+'to' =>
+'A',
+
+'message' =>
+'Message',
+
+'subject' =>
+'Objet',
+
+'debug_info' =>
+'Infos débogage',
+
+'debug_info_note' =>
+"(uniquement s\'il y a une erreur)",
+
+'clear_email_log' =>
+"Effacer le journal email",
+
+'no_emails_logged' =>
+"Aucun courriel journalisé",
+
+'email_log_not_enabled' =>
+"La journalisation des courriels est actuellement <strong>désactivée</strong> et aucun courriel ne sera journalisé avant qu\'elle ne soit activée dans les %preferences%.<br/>Il est recommandé de la laisser désactivée tant que vous n\'avez pas besoin de pister des problèmes de courriel.",
+
+'email_log_enabled' =>
+"La journalisation des courriels est actuellement <strong>activée</strong> et tous les courriels de notification Freeform seront journalisés jusqu\'à ce qu\'elle soit désactivée dans les %preferences%.<br/>Il est recommandé de la laisser désactivée tant que vous n\'avez pas besoin de pister des problèmes de courriel.",
+
+'email_log_cleared' =>
+"Journal des courriels effacé",
+
+'no_emails_logged' =>
+"Aucun courriel n\'a été journalisé.",
+
+// -------------------------------------
+// 	Language for preferences
+// -------------------------------------
+
+"preferences" =>
+"Préférences",
 
 'preference' =>
 'Préférence',
@@ -1362,7 +1662,7 @@ $lang = array(
 'Bannir les Mots Clés',
 
 'spam_keywords_desc' =>
-'Séparer avec nouvelle ligne (newline), utiliser un astérisque comme caractère \'joker\'.',
+'Séparer avec nouvelle ligne, utiliser un astérisque comme joker (frime).',
 
 'spam_keyword_ban_message' =>
 'Message pour Banissement de Mots Clés',
@@ -1374,49 +1674,49 @@ $lang = array(
 'Status Personnalisés de Formulaires',
 
 'form_statuses_desc' =>
-'Status Personnalisés de formulaires en plus de ceux par défaut : En Attente, Ouvert, Fermé.',
+'Statuts Personnalisés de formulaires en plus de ceux par défaut : En Attente, Ouvert, Fermé.',
 
 'max_user_recipients' =>
-'Maximum de Destinataires',
+'Nombre Maximum de Destinataires',
 
 'max_user_recipients_desc' =>
-'Le nombre maximum de destinataire pour les adresses courriel inscrites par les utilisateurs. Si le maximum est dépassé, une erreur est affichée à l\'utilisateur.',
+'Le nombre maximum de destinataires pour les adresses courriel inscrites par les utilisateurs. Si le maximum est dépassé, une erreur est affichée à l\'utilisateur.',
 
 'spam_count' =>
 'Compteur Spam',
 
 'spam_count_desc' =>
-'Le nombre maximum de courriels par Adresse IP durant l\'Intervalle de Temps de Spam.',
+'Le nombre maximum de courriels par Adresse IP durant l\'Intervalle de Temps Spam.',
 
 'spam_interval' =>
-'Intervalle Spam',
+'Intervalle de Temps Spam',
 
 'spam_interval_desc' =>
-'Intervalle de Temps avant de réinitialiser le maximum de courriels (Compte Spam) envoyés (en minutes)',
+'Intervalle de Temps (en minutes) avant de réinitialiser le Compteur Spam',
 
 'allow_user_field_layout' =>
-'Permettre l\'Emplacement Individualisé des Champs',
+'Autoriser la Disposition Individualisé des Champs',
 
 'allow_user_field_layout_desc' =>
-'Permet aux utilisateurs d\'ajuster leur propre emplacement des champs dans la section d\'entrées plutôt que d\'utiliser un réglage global par défaut émis par les administrateurs.',
+'Permet aux utilisateurs d\'ajuster leur propre disposition des champs dans la section d\'entrées plutôt que d\'utiliser un réglage global par défaut émis par les administrateurs.',
 
 'enable_spam_prevention' =>
 'Activer la Prévention Spam',
 
 'enable_spam_prevention_desc' =>
-'Activation de la Prévention Spam basée sur les préférences du Compte Spam et de l\'Intervalle Spam.',
+'Activation de la Prévention Spam basée sur les préférences du Compteur Spam et de l\'Intervalle de Temps Spam.',
 
 'default_show_all_site_data' =>
 'Afficher les données de tous les sites',
 
 'default_show_all_site_data_desc' =>
-'Afficher les données de tous les sites par défaut. Ceci ne prévient pas Freeform de prendre en compte les sites, mais affiche tous les Entrées, Champs, et Modèles de Notification Freeform de tous les sites par défaut au lieu de les activer par onglet de menu.',
+'Afficher les données de tous les sites par défaut. Ceci n\'empêche pas Freeform de prendre en compte les sites, mais affiche toutes les Entrées, Champs, et Templates de Notification Freeform de tous les sites par défaut au lieu de les activer par onglet de menu.',
 
 'keep_unfinished_multi_form' =>
 'Conserver les Données de Formulaires Multi-Page Non-Complétés',
 
 'keep_unfinished_multi_form_desc' =>
-'Les entrées de formulaires multi-page qui ne sont pas complétées à l\'intérieur du temps spécifié seront supprimées. Si vous souhaitez empêcher la suppression automatique et conserver les soumissions partielles des formulaires multi-page, ne cochez pas cette préférence. <br/><br/><span class=\'ss_notice\'>si vous choisissez d\'activer ceci, il est FORTEMENT recommandé d\'inclure, dans votre avis publique de confidentialité le fait que vous enregistrez les données de formulaires incomplets. Ceci peut avoir de lourdes implications en terme de confidentialité.</span>',
+'Les entrées de formulaires multi-page qui ne sont pas complétées dans le temps spécifié seront supprimées. Si vous souhaitez empêcher la suppression automatique et conserver les soumissions partielles des formulaires multi-page, ne cochez pas cette préférence. <br/><br/><span class=\'ss_notice\'>si vous choisissez d\'activer ceci, il est FORTEMENT recommandé d\'inclure, dans votre avis publique de confidentialité, que vous enregistrez les données de formulaires incomplets. Ceci peut avoir de lourdes implications en terme de confidentialité.</span>',
 
 'multi_form_timeout' =>
 'Délai pour Compléter les Formulaires Multi-page',
@@ -1431,13 +1731,37 @@ $lang = array(
 'Format de Date du Panneau de Contrôle',
 
 'cp_date_formatting_desc' =>
-'Formattage général de date pour les éléments dans le Panneau de Contrôle Freeform. Voyez le <a href=\'http://php.net/manual/en/function.date.php#refsect1-function.date-parameters\' target=\'_blank\'>Manuel de Format de Date PHP</a> pour les options disponibles.',
+'Formatage général de date pour les éléments dans le Panneau de Contrôle Freeform. Voyez le <a href=\'http://php.net/manual/en/function.date.php#refsect1-function.date-parameters\' target=\'_blank\'>Manuel de Format de Date PHP</a> pour les options disponibles.',
+
+'hook_data_protection' =>
+"Protection intégrité des données",
+
+'hook_data_protection_desc' =>
+"Parfois, des extensions de tierces parties ou personnalisées qui utilisent les crochets d\'accès de Freeform peuvent oublier ou déformer des données nécessaires. Cela peut provoquer un comportement erratique de Freeform. Une fois cette option activée, Freeform vérifiera la bonne intégrité des données lors de l\'appel de crochets d\'accès et utilisera des données sauvegardées si celles en provenance de l\'extension sont déformées.<br/><br/><span class='ss_notice'>Ne désactiver ceci que si vous avez des difficultés à faire fonctionner des extensions avec Freeform.</span>",
+
+'disable_missing_submit_warning' =>
+"Désactiver alerte bouton soumission absent",
+
+'disable_missing_submit_warning_desc' =>
+"Quand un bouton de soumission manque dans Composer, une alerte est affichée, vous pemettant de continuer ou de revenir en arrière pour ajouter un bouton de soumission avant de valider le formulaire. Ce paramètre vous permet de désactiver cette alerte.",
+
+'email_logging' => "Journalisation des courriels",
+
+'email_logging_desc' => "Quand ce paramètre est activé, Freeform enregistrera tous les courriels envoyés par les notifications Freeform, visibles dans l\'onglet Journaux Courriels. Il est recommandé de ne pas activer cette option, à moins que vous n\'ayez des problèmes avec les courriels Freeform et/ou ExpressionEngine.",
+
+// -------------------------------------
+//	global preferences
+// -------------------------------------
 
 'prefs_all_sites' =>
 'Utiliser ces Préférences pour Tous les Sites',
 
 'prefs_all_sites_desc' =>
 'Utilisez un ensemble de préférences pour tous les sites. Si la case n\'est pas cochée, chaque site aura ses propres préférences. Si la case est cochée, chaque site utilisera les préférences du site 1.',
+
+// -------------------------------------
+//	delete confirmations
+// -------------------------------------
 
 'delete_form_confirmation' =>
 'Êtes-vous sûr(e) de vouloir supprimer tous les formulaires et toutes leurs entrées ?',
@@ -1461,28 +1785,35 @@ $lang = array(
 'Notification(s) Supprimé(s) avec Succès',
 
 'freeform_will_lose_data' =>
-'Les formulaires suivants perdront leurs colonnes de données si ces champs sont supprimés (en ordre de champs à supprimer) :',
+'Les formulaires suivants perdront leurs colonnes de données si ces champs sont supprimés (trier selon les champs à supprimer) :',
+
+//----------------------------------------
+//  Errors
+//----------------------------------------
+
+'missing_post_data' =>
+"Variable POST valide obligatoire manquante",
 
 'call_to_undefined_method' =>
 'Erreur Fatale : Call to undefined method %class%::%method%()',
 
 'unable_to_write_to_cache' =>
-'Incapable d\'écrire dans le répertoire de cache. Vérifiez que votre répertoire cache est correctement configuré et est inscriptible.',
+'Incapable d\'écrire dans le répertoire de cache. Vérifiez que votre répertoire cache est correctement configuré et qu\'il est inscriptible.',
 
 'export_error' =>
-'Une erreur est survenue lors de l\'exporation.',
+'Une erreur est survenue lors de l\'export.',
 
 'email_subject_required' =>
-'Un Objet est requis pour les notifications',
+'Un objet est requis pour les notifications',
 
 'email_limit_exceeded' =>
-'Vous avez excédé le nombre maximum de courriels autorisés à être envoyés par ce formulaire à l\'intérieur d\'un temps prédéterminé',
+'Vous avez dépassé le nombre maximum autorisé de courriels envoyés par ce formulaire à l\'intérieur d\'un temps prédéterminé',
 
 'invalid_user_email_field' =>
 'Champ de Courriel Utilisateur Invalide',
 
 'no_valid_recipient_emails' =>
-'Les courriels des destinataires ont étés soumis, mais n\'étaient pas valides.',
+'Les courriels destinataires ont étés soumis, mais n\'étaient pas valides.',
 
 'over_recipient_user_limit' =>
 'Vous avez inscrit plus de destinataires que permis.',
@@ -1491,49 +1822,53 @@ $lang = array(
 'Vous avez sélectionné plus de destinataires que permis.',
 
 'invalid_upload_count' =>
-'Compteur de Téléchargement Invalide : le nombre de téléchargement doit être plus grand que 0 et inférieur ou égal à votre paramètre max_file_uploads inscrit dans votre fichier php.ini',
+'Compteur de téléchargement invalide : le nombre de téléchargement doit être plus grand que 0 et moins que ou égal à votre paramètre max_file_uploads dans php.ini',
 
 'invalid_custom_location' =>
-'Destination pour Téléchargement de Fichier Invalide : ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
+'Répertoire de téléchargement de fichier invalide : Ceci doit être un chemin absolu vers un répertoire <em>inscriptible</em> sur votre serveur.',
 
 'invalid_upload_location' =>
-'Choix de Destination pour Téléchargement Invalide. Il est possible que les destinations de téléchargement aient été éditées pendant votre mise à jour.',
+'Choix du répertoire de téléchargement invalide. Il est possible que les répertoires de téléchargement aient été modifiées pendant votre mise à jour.',
 
 'invalid_filetype_filter' =>
-'Filtre de Type de Fichier Invalide : Les filtres de type de fichier valides sont soit \'*\' (sans les guillemets) pour tout permettre ou une liste délimitée par des caractères tuyau (|) d\'extensions de fichiers comme \'jpeg|jpg|gif|png\'.',
+'Filtre de Type de Fichier invalide: Les filtres de type de fichier valides sont soit \'*\' (sans les guillemets) pour tout permettre ou une liste délimitée par des caractères tuyau (|)  d\'extensions de fichiers comme \'jpeg|jpg|gif|png\'.',
 
 'file_upload_limit_exceeded' =>
-'La limite prédéterminée du nombre maximal de fichier téléversable a été franchie.',
+'Limite fixée pour les téléchargements dépassée.',
 
 'unknown_file_upload_problem' =>
 'Problème inconnu de téléchargement de fichier.',
 
+//sub reasons
 'reason_banned' =>
-'Raison : Banni',
+'Raison: Banni',
 
 'reason_ip_required' =>
-'Raison : adresse IP requise',
+'Raison: IP requise',
 
 'reason_secure_form_timeout' =>
-'Raison : Temps écoulé pour Formulaires Sécurisés',
+'Raison: Temps écoulé pour Formulaires Sécurisés',
 
 'no_form_ids_submitted' =>
-'Aucune ID de formulaire n\'a été soumise.',
+'Aucun id de formulaire n\'a été soumis.',
 
 'no_field_ids_submitted' =>
-'Aucune ID de champ n\'a été soumise.',
+'Aucun id de champ n\'a été soumis.',
 
 'invalid_form_id' =>
-'Certaines IDs de formulaires soumises sont invalides.',
+'Certains Ids de formulaires soumis sont invalides.',
 
 'invalid_field_id' =>
-'Certaines IDs de champs soumises sont invalides.',
+'Certains Ids de champs soumis sont invalides.',
 
 'invalid_entry_id' =>
-'Certaines IDs d\'entrées soumises sont invalides.',
+'Certains Ids d\'entrées soumises sont invalides.',
 
 'invalid_notification_id' =>
-'Certaines IDs de notifications soumises sont invalides.',
+'Certains Ids de notifications soumises sont invalides.',
+
+'invalid_composer_data' =>
+"Les données Composer soumises sont invalides.",
 
 'non_valid_email' =>
 '%email% n\'est pas un courriel valide.',
@@ -1545,16 +1880,16 @@ $lang = array(
 'Aucun champ n\'existe actuellement.',
 
 'field_name_can_only_contain' =>
-'Les noms de champ ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres. Ils doivent avoir au moins une lettre, et être en lettres minuscules',
+'Les noms de champ ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres, doivent avoir au moins une lettre, et être en lettres minuscules',
 
 'form_name_can_only_contain' =>
-'Les noms de formulaire ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres. Ils doivent avoir au moins une lettre, et être en lettres minuscules',
+'Les noms de formulaire ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres, doivent avoir au moins une lettre, et être en lettres minuscules',
 
 'notification_name_can_only_contain' =>
-'Les noms de notification ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres. Ils doivent avoir au moins une lettre, et être en lettres minuscules',
+'Les noms de notification ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres, doivent avoir au moins une lettre, et être en lettres minuscules',
 
 'template_name_can_only_contain' =>
-'Les noms de modèle ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres. Ils doivent avoir au moins une lettre, et être en lettres minuscules',
+'Les noms de template ne peuvent contenir que des caractères de soulignement (underscore), des tirets, des lettres et des chiffres, doivent avoir au moins une lettre, et être en lettres minuscules',
 
 'duplicate_field_name' =>
 'Il y a déjà un champ du nom de \'%name%\'.',
@@ -1572,31 +1907,31 @@ $lang = array(
 'Un nom de champ est requis et ne peut pas être vide ou un chiffre.',
 
 'field_label_required' =>
-'Un label de champ est requis et ne peut pas être vide.',
+'Une étiquette de champ est requise et ne peut pas être vide.',
 
 'template_label_required' =>
-'Un label de modèle est requis et ne peut pas être vide.',
+'Une étiquette de template est requise et ne peut pas être vide.',
 
 'notification_name_required' =>
 'Un nom de notification est requis et ne peut pas être vide ou un chiffre.',
 
 'template_name_required' =>
-'Un nom de modèle est requis et ne peut pas être vide ou un chiffre.',
+'Un nom de template est requis et ne peut pas être vide ou un chiffre.',
 
 'notification_label_required' =>
-'Un label de notification est requis et ne peut pas être vide.',
+'Une étiquette de notification est requise et ne peut pas être vide.',
 
 'form_name_required' =>
 'Un nom de formulaire est requis et ne peut pas être vide ou un chiffre.',
 
 'form_label_required' =>
-'Un label de champ est requis et ne peut pas être vide.',
+'Une étiquette de champ est requise et ne peut pas être vide.',
 
 'field_edit_warning' =>
 'Ceci pourrait changer des données existantes !',
 
 'field_edit_warning_desc' =>
-'Les formulaires suivants, et leurs données, seront affectés en éditant ce champ : <strong>%form_names%</strong>',
+'Les formulaires suivants, et leurs données, seront affectés si vous modifiez ce champ : <strong>%form_names%</strong>',
 
 'field_name_exists' =>
 'Un champ du nom de \'%name%\' existe déjà. Retournez et choisissez un autre nom.',
@@ -1617,22 +1952,25 @@ $lang = array(
 'Le nom de notification \'%name%\' est un nom réservé par Freeform. Retournez et choisissez un autre nom.',
 
 'reserved_template_name' =>
-'Le nom de modèle \'%name%\' est un nom réservé par Freeform. Retournez et choisissez un autre nom.',
+'Le nom de template \'%name%\' est un nom réservé par Freeform. Retournez et choisissez un autre nom.',
 
 'from_email_required' =>
-'Le courriel pour le champ \'De\' est requis pour les notifications',
+'Le courriel pour le champ \'De\' (From) est requis pour les notifications',
 
 'from_name_required' =>
-'Le nom pour le champ \'De\' est requis pour les notifications',
+'Le nom pour le champ \'De\' (From) est requis pour les notifications',
+
+'email_subject_required' =>
+"L\'objet du courriel est obligatoire pour les notifications",
 
 'no_duplicates' =>
 'Aucune soumission en duplicata n\'est acceptée dans ce formulaire.',
 
 'required_field_missing' =>
-'Il manque une donnée dans un champ obligatoire.',
+'Un champ obligatoire est vide.',
 
 'fields_do_not_match' =>
-'Les champs correspondants obligatoires suivants ne sont pas identiques : ',
+'Les champs correspondants suivants ne sont pas identiques : ',
 
 'generic_invalid_field_input' =>
 'Entrée invalide.',
@@ -1656,13 +1994,15 @@ $lang = array(
 'La longueur de champ maximum de %num% est dépassée.',
 
 'field_settings_error' =>
-'Les options pour ce type de champ comportaient des erreurs.',
+'Les options pour ce type de champ avaient des erreurs.',
 
+//this is for concatenating to a standard field with a required match
 'confirm' =>
 'Confirmer',
 
+//general errors
 'invalid_request' =>
-'Demande Invalide',
+'Requête Invalide',
 
 'freeform_module_disabled' =>
 'Le module Freeform est actuellement désactivé. Vérifiez qu\'il est installé et mis à jour en visitant le Panneau de Contrôle du module à partir du Panneau de Contrôle ExpressionEngine',
@@ -1673,6 +2013,7 @@ $lang = array(
 'enable_module_to_enable_extension' =>
 'Pour activer cette extension, vous devez activer le <a href=\'%url%\'>module</a> correspondant.',
 
+//field multi row save error
 'you_must_choose_field_options' =>
 'Vous devez choisir des options de données pour les multi-rangées pour que ce champ fonctionne.',
 
@@ -1692,16 +2033,20 @@ $lang = array(
 'Erreur en créant l\'export',
 
 'author_edit_only' =>
-'Seul(e) l\'auteur(e) de cette entrée peut l\'éditer.',
+'Seul(e) l\'auteur(e) de cette entrée peut la modifier.',
+
+// -------------------------------------
+//	file upload errors
+// -------------------------------------
 
 'upload_userfile_not_set' =>
 'Incapable de trouver une variable \'post\' nommée \'user file\'.',
 
 'upload_file_exceeds_limit' =>
-'Le maximum de téléchargement de fichiers excède la taille maximum allouée dans votre configuration PHP.',
+'La taille du fichier téléchargé excède la taille maximum autorisée par votre configuration PHP.',
 
 'upload_file_exceeds_form_limit' =>
-'Le maximum de téléchargement de fichiers excède la taille maximum allouée par le formulaire.',
+'La taille du fichier téléchargé excède la taille maximum autorisée par le formulaire.',
 
 'upload_file_partial' =>
 'Le fichier a été partiellement téléchargé.',
@@ -1710,7 +2055,7 @@ $lang = array(
 'Répertoire temporaire manquant.',
 
 'upload_unable_to_write_file' =>
-'Le fichier n\'a pu être écrit sur disque.',
+'Le fichier n\'a pu être écrit dans son répertoire.',
 
 'upload_stopped_by_extension' =>
 'Le téléchargement de fichier a été arrêté par l\'extension.',
@@ -1722,16 +2067,16 @@ $lang = array(
 'Le type de fichier que vous essayez de télécharger n\'est pas accepté.',
 
 'upload_invalid_filesize' =>
-'Le fichier que vous essayez de télécharger a une taille plus grande que la taille autorisée.',
+'Le fichier que vous essayez de télécharger a une taille plus grande que la taille permise.',
 
 'upload_invalid_dimensions' =>
-'L\'image que vous essayez de télécharger excède le maximum de hauteur et largeur.',
+'L\'image que vous essayez de télécharger excède la hauteur et largeur maximum.',
 
 'upload_destination_error' =>
 'Un problème est survenu en essayant de déplacer le fichier téléchargé vers sa destination finale.',
 
 'upload_no_filepath' =>
-'Le chemin ne semble pas valide.',
+'Le chemin (path) n\'apparaît pas valide.',
 
 'upload_no_file_types' =>
 'Vous n\'avez pas spécifié de type de fichier.',
@@ -1740,7 +2085,11 @@ $lang = array(
 'Le nom de fichier que vous avez soumis existe déjà sur le serveur.',
 
 'upload_not_writable' =>
-'Le répertoire pour la destination de téléchargement ne semble pas être inscriptible.',
+'La répertoire pour la destination de téléchargement semble ne pas être inscriptible.',
+
+//----------------------------------------
+//  Update routine
+//----------------------------------------
 
 'update_freeform_module' =>
 'Mettre à Jour le Module Freeform',
@@ -1752,7 +2101,12 @@ $lang = array(
 'Le module a été mis à jour avec succès.',
 
 'update_failure' =>
-'Une erreur s\'est produite en tentant de mettre à jour le module vers une version plus récente.',
+'Il y a eu une erreur en essayant de mettre à jour le module vers sa version la plus récente. ',
+
+// -------------------------------------
+//	State, Province and Country list last because
+// 	its stupid long
+// -------------------------------------
 
 'list_of_us_states' => '
 Alabama (AL)
@@ -2023,10 +2377,6 @@ Yemen
 Zambia
 Zimbabwe',
 
-'translate' =>
-'Traduire',
-
+// END
 ''=>''
 );
-
-// End of File

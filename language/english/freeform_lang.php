@@ -1,14 +1,15 @@
 <?php
 
- /**
- * Solspace - Freeform
+/**
+ * Freeform - Language
  *
  * @package		Solspace:Freeform
- * @author		Solspace DevTeam
- * @copyright	Copyright (c) 2008-2012, Solspace, Inc.
- * @link		http://solspace.com/docs/addon/c/Freeform/
- * @version		4.0.7
- * @filesource 	./system/expressionengine/third_party/freeform/language/english/
+ * @author		Solspace, Inc.
+ * @copyright	Copyright (c) 2008-2015, Solspace, Inc.
+ * @link		https://solspace.com/docs/freeform
+ * @license		https://solspace.com/software/license-agreement
+ * @version		4.2.4
+ * @filesource	freeform/language/english/freeform_lang.php
  */
 
 $lang = array(
@@ -20,15 +21,12 @@ $lang = array(
 // Required for MODULES page
 //----------------------------------------
 
-/*%non_pro%
+
 "freeform_module_name" =>
 "Freeform",
-//%/non_pro%*/
 
-//%pro%
-"freeform_module_name" =>
-"Freeform Pro",
-//%/pro%
+
+
 
 'go_pro' =>
 "Go Pro!",
@@ -49,11 +47,21 @@ $lang = array(
 "Default",
 
 // -------------------------------------
+//	accessory
+// -------------------------------------
+
+'freeform_accessory_description' =>
+"Recent Freeform entries and short names for fields attached to forms.",
+
+'freeform_form_info' =>
+"Form Info",
+
+// -------------------------------------
 //	non pro lang
 // -------------------------------------
 
 'go_pro_custom_fields' =>
-"Did you know that there are more field types available with Freeform Pro? Click here to Go Pro for $79.95.",
+"Did you know that there are more field types available with Freeform Pro? Click here to Go Pro!",
 
 // -------------------------------------
 //	fieldtype
@@ -64,6 +72,15 @@ $lang = array(
 
 'choose_composer_form' =>
 "Choose a Freeform Composer Form to output:",
+
+'toggle_field_short_names' =>
+"Toggle Field Short Names",
+
+'show' =>
+"Show",
+
+'hide' =>
+"Hide",
 
 //----------------------------------------
 //  Main Menu
@@ -164,6 +181,9 @@ $lang = array(
 'notice' =>
 "Notice",
 
+'view_lower' =>
+"view",
+
 // -------------------------------------
 //	form statuses
 // -------------------------------------
@@ -204,6 +224,9 @@ $lang = array(
 
 'submissions' =>
 "Submissions",
+
+'pending_submissions' =>
+"Pending Submissions",
 
 'moderate' =>
 "Moderate",
@@ -354,7 +377,7 @@ $lang = array(
 "Auto Generate Name",
 
 'click_drag_add_remove_sort'=>
-"Click or drag to add and remove fields. Drag the fields in the right column to sort. The fields in the right column will be available in this form on output and they will display in this order when using the {all_form_fields} tag pair.",
+"Click or drag to add and remove fields. Drag the fields in the right column to sort. The fields in the right column will be available in this form on output and they will display in this order when using the {freeform:all_form_fields} tag pair.",
 
 'return_page_field' =>
 "Enter a Return path to send users to once they have submitted this form (ex: 'form/thank_you'):",
@@ -396,6 +419,9 @@ $lang = array(
 'submit_button'=>
 "Submit Button",
 
+'submit_previous_button'=>
+"Submit Previous Button",
+
 'search_fields'=>
 "Search Fields",
 
@@ -407,6 +433,9 @@ $lang = array(
 
 'captcha' =>
 "Captcha",
+
+'sticky_controls' =>
+"Sticky Controls",
 
 'double_click_to_edit' =>
 "Double Click to Edit",
@@ -535,6 +564,12 @@ $lang = array(
 
 'submit' =>
 "Submit",
+
+'submit_previous' =>
+"Submit Previous",
+
+'previous' =>
+"Previous",
 
 'view' =>
 "View",
@@ -707,6 +742,9 @@ $lang = array(
 
 'all_fields' =>
 "All Fields",
+
+'format_dates' =>
+"Format&nbsp;Dates",
 
 // -------------------------------------
 //	multi-item rows for fields
@@ -998,6 +1036,12 @@ $lang = array(
 'filename' =>
 'File Name',
 
+'download' =>
+'Download',
+
+'front_end_link' =>
+'Front End Link',
+
 'file_location' =>
 'File Location',
 
@@ -1028,8 +1072,8 @@ $lang = array(
 'cannot_find_file' =>
 "Cannot find file",
 
-'upload_directory_name' =>
-"Upload Directory Name",
+'upload_preference_name' =>
+"Upload Preference Name",
 
 // -------------------------------------
 //	MultiSelect
@@ -1129,10 +1173,10 @@ $lang = array(
 "Default row amount to display.",
 
 'disallow_html_rendering' =>
-"Disallow HTML Rendering",
+"Prevent User HTML Rendering",
 
 'disallow_html_rendering_desc' =>
-"By default, HTML tags will be encoded so that they will not render on output. This helps prevent users from inputting html and showing images or their own custom output on your pages. Disabling this will allow html to be rendered on output",
+"By default, HTML tags will be encoded so that they will not render on output. This prevents users from inputting HTML and showing images or their own custom output on your pages.",
 
 //----------------------------------------
 //  edit field
@@ -1299,7 +1343,7 @@ $lang = array(
 "Subject",
 
 'email_subject_desc' =>
-"The subject line of the notification. The following variables are available: {my_custom_field}, {freeform_entry_id}, {entry_date}, {form_name}, {form_id}, {form_label}",
+"The subject line of the notification. The following variables are available: {my_custom_field}, {freeform_entry_id}, {entry_date}, {form_name}, {form_id}, {form_label}<br/><br/><span class='note' Check with your hosting company about maximum email subject length as it could cause emails to silently fail to send.",
 
 'notification_description' =>
 "Description",
@@ -1533,6 +1577,52 @@ Here are the details:
 "Module Control Panel Tab Permissions",
 
 // -------------------------------------
+// 	Language for Email Logs
+// -------------------------------------
+
+'email_logs' =>
+"Email Logs",
+
+'success_reported' =>
+'Success Reported',
+
+'from' =>
+"From",
+
+'to' =>
+'To',
+
+'message' =>
+'Message',
+
+'subject' =>
+'Subject',
+
+'debug_info' =>
+'Debug Info',
+
+'debug_info_note' =>
+"(usually only if there's an error)",
+
+'clear_email_log' =>
+"Clear Email Log",
+
+'no_emails_logged' =>
+"No Emails Logged",
+
+'email_log_not_enabled' =>
+"Email Logging is currently <strong>disabled</strong> and no emails will be logged until it is enabled in %preferences%.<br/>It is recommended that it remain disabled unless you are troubleshooting email issues.",
+
+'email_log_enabled' =>
+"Email Logging is currently <strong>enabled</strong> and all Freeform notification emails will be logged until it is disabled in %preferences%.<br/>It is recommended that this be disabled unless you are troubleshooting email issues.",
+
+'email_log_cleared' =>
+"Email Log Cleared",
+
+'no_emails_logged' =>
+"No Emails have been logged.",
+
+// -------------------------------------
 // 	Language for preferences
 // -------------------------------------
 
@@ -1627,7 +1717,7 @@ Here are the details:
 "Keep Unfinished Multi-page Form Data",
 
 'keep_unfinished_multi_form_desc' =>
-"Multi-page form entries that are not completed within the above specified time range will be deleted. If you wish to prevent that automatic deletion and keep partial multi-page form submissions, uncheck this preference. <br/><br/><span class='ss_notice'>If you choose to enable this, it is STRONGLY recommended that you include, in your website's public privacy notice, that you are storing data from incomplete forms. This can have serious privacy implications.</span>",
+"Multi-page form entries that are not completed within the above specified time range will be deleted. If you wish to prevent that automatic deletion and keep partial multi-page form submissions, check this preference. <br/><br/><span class='ss_notice'>If you choose to enable this, it is STRONGLY recommended that you include, in your website's public privacy notice, that you are storing data from incomplete forms. This can have serious privacy implications.</span>",
 
 'multi_form_timeout' =>
 "Multi-page Form Completion Timeout",
@@ -1643,6 +1733,22 @@ Here are the details:
 
 'cp_date_formatting_desc' =>
 "General date formatting setting for items in the Freeform Control Panel. See the <a href='http://php.net/manual/en/function.date.php#refsect1-function.date-parameters' target='_blank'>PHP Date Format Manual</a> for available options.",
+
+'hook_data_protection' =>
+"Hook Data Protection",
+
+'hook_data_protection_desc' =>
+"Sometimes third party or custom extensions using Freeform's hooks might forget or malform needed data. This can cause Freeform to behaive in mysterious ways. With this enabled, Freeform will check for data integrity when calling hooks and use backup data if the incoming data from the extension is malformed.<br/><br/><span class='ss_notice'>Only disable this if you are having trouble with extensions to Freeform functioning.</span>",
+
+'disable_missing_submit_warning' =>
+"Disable Missing Submit Warning",
+
+'disable_missing_submit_warning_desc' =>
+"When a submit button is missing from Composer, a warning is shown letting you know and allowing you to continue or go back and add a submit button before submitting. This setting allows you to disable the warning.",
+
+'email_logging' => "Email Logging",
+
+'email_logging_desc' => "When this is enabled, Freeform will record every email sent via Freeform Notifications, viewable in the Email Logs tab. It's recommended that this stay disabled unless you are having issues you wish to troubleshoot with Freeform and ExpressionEngine Email.",
 
 // -------------------------------------
 //	global preferences
@@ -1685,6 +1791,9 @@ Here are the details:
 //----------------------------------------
 //  Errors
 //----------------------------------------
+
+'missing_post_data' =>
+"Missing required valid POST variable",
 
 'call_to_undefined_method' =>
 "Fatal error: Call to undefined method %class%::%method%()",
@@ -1758,6 +1867,9 @@ Here are the details:
 
 'invalid_notification_id' =>
 "Invalid notification id(s) submitted.",
+
+'invalid_composer_data' =>
+"Invalid Composer Data Submitted.",
 
 'non_valid_email' =>
 "%email% is not a valid email.",
